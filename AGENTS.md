@@ -1,17 +1,21 @@
 ---
 
-## 5. IDENTIDAD VISUAL — COLORES OFICIALES DACTA
+## 5. IDENTIDAD VISUAL — COLORES OFICIALES INTEGRENS
 
-Toda interfaz generada debe respetar estos colores:
+El producto a desarrollar es para Integrens, por lo tanto toda
+interfaz generada debe respetar la identidad visual de Integrens.
 
 | Nombre | Código HEX | Uso |
 |---|---|---|
-| Azul principal | #2e4af6 | Botones, acciones principales, links |
-| Azul acero | #6fa3b2 | Elementos secundarios, iconos, bordes |
-| Azul marino | #003366 | Sidebar, cabeceras, fondo del menú |
+| Púrpura principal | #5B33D4 | Botones, acciones principales, links |
+| Púrpura oscuro | #453E72 | Header, navbar, cabeceras |
+| Sidebar Integrens | #353C44 | Sidebar, menú principal |
+| Cyan acento | #38C1E1 | Badges activos, iconos y acciones especiales |
+| Fondo lavanda | #F2F0FE | Fondo general de la aplicación |
 
-Referencia visual: estilo profesional y serio tipo Zendesk.
+Referencia visual: ERP Integrens real, profesional y serio tipo Zendesk.
 Tecnología de estilos: React + Tailwind CSS.
+Documento visual obligatorio: docs/skills/INTEGRENS-BRAND-SKILL.md.
 
 ---
 
@@ -110,5 +114,5 @@ Funcionalidades del producto mínimo viable:
 
 ---
 *Este archivo es la fuente de verdad del proyecto.*
-*Versión 1.1 — se agregaron colores DACTA, visión de escalado y roadmap.*
+*Versión 1.1 — se agregaron colores Integrens, visión de escalado y roadmap.*
 *Actualizar solo con aprobación del Orquestador.*

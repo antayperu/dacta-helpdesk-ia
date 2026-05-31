@@ -130,12 +130,16 @@ Formato: [tipo]: [descripción corta en español]
 - agenteService.js
 - clasificacionService.js
 
-### 4.3 Colores oficiales DACTA — siempre respetar
+### 4.3 Colores oficiales Integrens — siempre respetar
 | Nombre | Código HEX | Uso |
 |---|---|---|
-| Azul principal | #2e4af6 | Botones, acciones principales |
-| Azul acero | #6fa3b2 | Elementos secundarios, iconos |
-| Azul marino | #003366 | Sidebar, cabeceras, menú |
+| Púrpura principal | #5B33D4 | Botones, acciones principales |
+| Púrpura oscuro | #453E72 | Header, navbar, cabeceras |
+| Sidebar Integrens | #353C44 | Sidebar, menú principal |
+| Cyan acento | #38C1E1 | Badges activos, iconos y acciones especiales |
+| Fondo lavanda | #F2F0FE | Fondo general de la aplicación |
+
+El frontend debe seguir `docs/skills/INTEGRENS-BRAND-SKILL.md`.
 
 ---
 *Basado en M-O-DES-001 V3.0, M-O-DES-002 V3.0, M-O-DES-003 V3.0*

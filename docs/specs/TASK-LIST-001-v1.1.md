@@ -25,7 +25,7 @@ Antes de ejecutar cualquier tarea debes:
 
 ## STACK TECNOLÓGICO
 
-- Backend: Java 17 + Spring Boot 3.x
+- Backend: Java 25 + Spring Boot 3.x
 - Frontend: React 18 + Tailwind CSS
 - Base de datos: PostgreSQL 15
 - IA: Claude API — modelo claude-sonnet-4-20250514
@@ -36,11 +36,15 @@ Antes de ejecutar cualquier tarea debes:
 - Control de versiones: GitLab DACTA
 - Editor: VS Code + Claude Code
 
-## COLORES DACTA — OBLIGATORIOS EN TODO EL FRONTEND
+## COLORES INTEGRENS — OBLIGATORIOS EN TODO EL FRONTEND
 
-- Azul principal: #2E4AF6 — botones y acciones principales
-- Azul acero: #6FA3B2 — elementos secundarios e iconos
-- Azul marino: #003366 — sidebar, cabeceras y menú
+- Púrpura principal: #5B33D4 — botones y acciones principales
+- Púrpura oscuro: #453E72 — header, navbar y cabeceras
+- Sidebar Integrens: #353C44 — sidebar y menú principal
+- Cyan acento: #38C1E1 — badges activos, iconos y acciones especiales
+- Fondo lavanda: #F2F0FE — fondo general de la aplicación
+
+Antes de cualquier tarea frontend, leer `docs/skills/INTEGRENS-BRAND-SKILL.md`.
 
 ---
 
@@ -66,7 +70,7 @@ Antes de ejecutar cualquier tarea debes:
 ### TASK-001 — Configurar proyecto Spring Boot base
 **Archivo:** `backend/pom.xml`
 **Acción:**
-Crear el proyecto Spring Boot 3.x con dependencias en pom.xml:
+Crear el proyecto Spring Boot 3.x compatible con Java 25
 - spring-boot-starter-web
 - spring-boot-starter-data-jpa
 - spring-boot-starter-security
@@ -729,12 +733,14 @@ npm install react-query date-fns recharts
 npx tailwindcss init
 ```
 
-tailwind.config.js — colores DACTA:
+tailwind.config.js — colores Integrens:
 ```javascript
 colors: {
-  'dacta-primary': '#2E4AF6',
-  'dacta-secondary': '#6FA3B2',
-  'dacta-dark': '#003366',
+  'integrens-primary': '#5B33D4',
+  'integrens-primary-dark': '#453E72',
+  'integrens-sidebar': '#353C44',
+  'integrens-cyan': '#38C1E1',
+  'integrens-bg': '#F2F0FE',
 }
 ```
 
@@ -782,7 +788,7 @@ src/
 **Acción:**
 - Logo DACTA Help Desk IA
 - Campo correo + campo contraseña
-- Botón "Ingresar" color #2E4AF6
+- Botón "Ingresar" color #5B33D4
 - Manejo de errores: credenciales incorrectas, cuenta bloqueada
 - Fondo blanco. Responsive centrado.
 
@@ -793,7 +799,7 @@ src/
 ### TASK-038 — Crear layout principal con sidebar
 **Archivo:** `frontend/src/components/common/Layout.jsx`
 **Acción:**
-Sidebar izquierdo color #003366:
+Sidebar izquierdo color #353C44:
 - Logo + nombre DACTA Help Desk IA
 - Menú según rol:
   - AGENTE: Mis Tickets, Cola de Tickets
@@ -804,7 +810,7 @@ Sidebar izquierdo color #003366:
 - Header: título + nombre usuario + indicador "IA activa"
 - Responsive: sidebar colapsable en móvil
 
-**Verificación:** Layout carga con sidebar #003366. Menú varía por rol.
+**Verificación:** Layout carga con sidebar #353C44. Menú varía por rol.
 
 ---
 
@@ -985,8 +991,8 @@ Cálculos de tiempo (descontando n_minutos_pausado):
 Tarjetas resumen (fila superior):
 - Total tickets | Tickets críticos | FRT promedio equipo | TTR promedio equipo
 
-Gráficos (Recharts, colores DACTA):
-- Barras: tickets por módulo (#2E4AF6)
+Gráficos (Recharts, colores Integrens):
+- Barras: tickets por módulo (#5B33D4)
 - Torta: distribución por urgencia
 - Líneas: evolución tickets por día
 
@@ -998,7 +1004,7 @@ Tabla comparativa de agentes:
 Selector período: Hoy, Semana, Mes, Trimestre, Personalizado
 Actualización automática cada 60 segundos.
 Solo lectura — sin botones de acción.
-Colores DACTA obligatorios.
+Colores Integrens obligatorios.
 
 **Verificación:** Dashboard carga métricas reales incluyendo FRT y TTR por agente. Filtro de período actualiza todos los gráficos.
 
@@ -1204,7 +1210,7 @@ git push origin --tags
 3. VERIFICAR con el comando indicado antes de reportar.
 4. REPORTAR al Orquestador Camilo Ortega FR y ESPERAR aprobación.
 5. NUNCA avanzar sin aprobación explícita.
-6. RESPETAR colores DACTA: #2E4AF6 / #6FA3B2 / #003366.
+6. RESPETAR identidad visual Integrens: #5B33D4 / #453E72 / #353C44 / #38C1E1.
 7. SEGUIR estándares: M-O-DES-001, M-O-DES-002, M-O-DES-003.
 
 ---

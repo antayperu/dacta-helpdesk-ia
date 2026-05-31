@@ -236,7 +236,7 @@ Criterios:
 - Listado paginado: código, cliente, asunto, estado, urgencia (color), módulo, responsable, fecha.
 - Ver cola sin asignar + mis tickets asignados.
 - Panel se actualiza en tiempo real sin recargar la página.
-- Colores DACTA: #2E4AF6, #6FA3B2, #003366.
+- Colores Integrens según `docs/skills/INTEGRENS-BRAND-SKILL.md`.
 - Interfaz responsiva: PC, laptop y celular.
 
 ---
@@ -302,7 +302,7 @@ Criterios:
 - Métricas: tickets por estado, urgencia, módulo, agente y canal de origen.
 - Tiempo promedio de resolución de tickets.
 - Actualización automática sin recargar la página.
-- Solo lectura — sin acceso a tickets. Colores DACTA.
+- Solo lectura — sin acceso a tickets. Colores Integrens.
 
 ---
 
@@ -354,7 +354,7 @@ Criterios:
 | HT-003 | Configuración Claude API (Anthropic) | Épica 2 |
 | HT-004 | Base de datos PostgreSQL + modelos de datos | Épicas 1, 2, 3 |
 | HT-005 | Estructura base Spring Boot — controllers, services, repositories | Épicas 1-5 |
-| HT-006 | Frontend React + Tailwind CSS con colores DACTA | Épicas 3, 4, 5 |
+| HT-006 | Frontend React + Tailwind CSS con identidad visual Integrens | Épicas 3, 4, 5 |
 | HT-007 | Autenticación JWT + control de sesiones | Épica 5 |
 | HT-008 | Sistema de logs y auditoría del sistema | Épicas 1-5 |
 | HT-009 | Pipeline CI/CD GitLab DACTA | Épicas 1-5 |
@@ -383,7 +383,7 @@ Criterios:
 - Todos los criterios de aceptación implementados y verificados.
 - Casos QA correspondientes pasan correctamente.
 - Estándares DACTA respetados: M-O-DES-001, M-O-DES-002, M-O-DES-003.
-- Colores DACTA aplicados: #2E4AF6 / #6FA3B2 / #003366.
+- Identidad visual Integrens aplicada según `docs/skills/INTEGRENS-BRAND-SKILL.md`.
 - Interfaz responsiva verificada en PC y celular.
 - Notificaciones al cliente funcionando para la HU correspondiente.
 - Aprobado por Orquestador Camilo Ortega FR.
@@ -404,13 +404,15 @@ Criterios:
 
 ---
 
-## COLORES OFICIALES DACTA
+## COLORES OFICIALES INTEGRENS
 
 | Nombre | HEX | Uso |
 |---|---|---|
-| Azul principal | #2E4AF6 | Botones y acciones principales |
-| Azul acero | #6FA3B2 | Elementos secundarios e iconos |
-| Azul marino | #003366 | Sidebar, cabeceras y menú |
+| Púrpura principal | #5B33D4 | Botones y acciones principales |
+| Púrpura oscuro | #453E72 | Header, navbar y cabeceras |
+| Sidebar Integrens | #353C44 | Sidebar y menú principal |
+| Cyan acento | #38C1E1 | Badges activos, iconos y acciones especiales |
+| Fondo lavanda | #F2F0FE | Fondo general de la aplicación |
 
 ---
 
@@ -418,7 +420,8 @@ Criterios:
 
 - NUNCA generar código sin HU y criterios de aceptación aprobados en este documento.
 - SIEMPRE respetar estándares: M-O-DES-001, M-O-DES-002, M-O-DES-003.
-- SIEMPRE usar colores DACTA en el frontend.
+- SIEMPRE usar la identidad visual Integrens en el frontend.
+- SIEMPRE consultar `docs/skills/INTEGRENS-BRAND-SKILL.md` antes de generar frontend.
 - SIEMPRE respetar la política de canales — seguimiento siempre por correo.
 - SIEMPRE esperar aprobación del Orquestador antes de avanzar a la siguiente tarea.
 - El Orquestador es Camilo Ortega FR — QE / SDD — DACTA S.A.C.

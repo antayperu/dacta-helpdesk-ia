@@ -58,7 +58,7 @@ de tickets usando inteligencia artificial.
 
 | Capa | Tecnología |
 |---|---|
-| Backend | Java 17 + Spring Boot |
+| Backend | Java 25 + Spring Boot |
 | Frontend | React + Tailwind CSS |
 | Base de datos | PostgreSQL |
 | IA | Claude API (Anthropic) |
@@ -73,7 +73,7 @@ dacta-helpdesk-ia/
 │   ├── specs/        ← Especificaciones SDD aprobadas
 │   ├── decisions/    ← Decisiones técnicas del proyecto
 │   └── standards/    ← Documentos oficiales DACTA
-├── backend/          ← Java 17 + Spring Boot
+├── backend/          ← Java 25 + Spring Boot
 ├── frontend/         ← React + Tailwind CSS
 ├── database/         ← Scripts SQL PostgreSQL
 ├── AGENTS.md         ← Contexto para agentes IA
