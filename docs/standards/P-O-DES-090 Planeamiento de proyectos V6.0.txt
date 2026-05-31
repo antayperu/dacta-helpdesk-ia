@@ -1,0 +1,223 @@
+|  | SISTEMA INTEGRADO DE GESTIÓN | Código | P-O-DES-090 |
+| --- | --- | --- | --- |
+|  | **PLANEAMIENTO DE PROYECTOS** | Versión | 6.0 |
+|  |  | Vigente desde | 20/10/2025 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | Página | 3 de 13 |
+
+|  | SISTEMA INTEGRADO DE GESTIÓN | Código | P-O-DES-090 |
+| --- | --- | --- | --- |
+|  | **PLANEAMIENTO DE PROYECTOS** | Versión | 6.0 |
+|  |  | Vigente desde | 20/10/2025 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | Página | 11 de 13 |
+
+|  | SISTEMA INTEGRADO DE GESTIÓN | Código | P-O-DES-090 |
+| --- | --- | --- | --- |
+|  | **PLANEAMIENTO DE PROYECTOS** | Versión | 6.0 |
+|  |  | Vigente desde | 20/10/2025 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | Página | 13 de 13 |
+
+			OBJETIVO
+
+Estandarizar la planificación de los requerimientos de desarrollos optimizando los recursos disponibles, determinando las metas que se deben alcanzar para obtener un resultado satisfactorio y de calidad cubriendo las necesidades y expectativas del cliente indicando qué se incluye y qué no se incluye en el proyecto.
+
+			ALCANCE 
+
+Este procedimiento aplica para todos los requerimientos de desarrollo de software.
+
+			RESPONSABLES
+
+- **Del ****Coordinador de Desarrollo**
+
+- Velar por el cumplimiento de lo establecido en el presente documento.
+
+- Atender las directivas emanadas de la Gerencia de Proyectos y hacerlas cumplir con el personal que tenga bajo su responsabilidad.
+
+- Dirigir, orientar, capacitar, evaluar y controlar en todo lo relacionado a la labor profesional del personal que tenga a su cargo.
+
+- Liderar y propiciar la capacitación con el equipo de desarrollo temas de investigación nuevas tecnologías.
+
+- Entender y aplicar los procesos adoptadas por la empresa para una correcta gestión de los proyectos de desarrollo.  
+
+- Gestionar ante la Gerencia de Proyectos, los recursos necesarios para el cabal cumplimiento de sus responsabilidades como dueño del proceso de desarrollo.
+
+- Participar en la elaboración y revisión del alcance en la Definición de requerimientos.
+
+- Elaborar y/o revisar los Planes de Actividades de los proyectos de desarrollo con el Analista Programador.
+
+- Elaborar y/o revisar el Gantt del Proyecto de desarrollo con el Analista Programador.
+
+- Asignar personal, que se encuentre a su cargo, para atender las actividades inherentes a la ejecución de todas las etapas de los proyectos de desarrollo.
+
+- Deberá asegurarse que los miembros del equipo tengan el conocimiento y experiencia necesaria para llevar a cabo el proyecto.
+
+- Revisar, en coordinación con el personal a su cargo, las especificaciones funcionales, de cada desarrollo con las que trabajará dicho personal y los tiempos que demandará su culminación.
+
+- Evaluar el avance de los proyectos y asegurar que los mismos cuenten con los controles y estándares establecidos.
+
+- Coordinar con el líder de usuarios o el líder de sistemas del cliente, los aspectos relacionados a los avances de sus respectivos proyectos.
+
+- Efectuar seguimiento diario a todas las tareas asignadas al personal a su cargo.
+
+- Cumplir y hacer cumplir, al personal a su cargo, los cronogramas de trabajo comprometidos con el cliente. 
+
+- **Del ****Gerente de Proyectos**
+
+- Atender las directivas emanadas de la Gerencia General.
+
+- Recepcionar, evaluar y aprobar/rechazar solicitudes o requerimientos de desarrollos nuevos. 
+
+- Planificar y organizar los proyectos tomando en cuenta las necesidades informáticas de los clientes y los recursos existentes.
+
+- Deberá asegurarse que los recursos críticos estén disponibles.
+
+- Ayudar a todos los participantes de un proyecto a establecer los objetivos de forma clara y realista, así como facilitar la asignación de recursos que se requieran para una óptima performance de cada proyecto a ejecutar por el personal a su cargo
+
+- Gestionar las restricciones de cada proyecto en coordinación con su líder: el alcance, la calidad, el tiempo, los costos, los riesgos y la satisfacción del cliente interno y cliente Dacta.
+
+- Monitorear el progreso de todos los proyectos en coordinación con cada líder de proyectos y/o representante de Dacta encargado del proyecto, promoviendo la oportuna toma de decisiones y evitando se pierdan de vista los objetivos y metas planeadas.
+
+- Revisar y aprobar 6los Planes de Actividades del proyecto de desarrollo y el Gantt del Proyecto de desarrollo.
+
+- Gestionar los pedidos de las áreas solicitantes respecto a desarrollos de mejora.
+
+- **Del Líder de Proyectos**
+
+- Facilitador de los proyectos con los clientes externos.
+
+- Coordina y monitorea con el cliente la atención oportuna de los proyectos.
+
+- Negociar la cantidad de recursos y los tiempos asignados a las actividades proyecto.
+
+- Será el seguimiento del cumplimiento de los plazos establecidos en el GANTT del proyecto.
+
+- **Del ****Analista Programador**
+
+- Participa activamente en las reuniones con el cliente, para efectuar levantamiento de información sobre los requerimientos que éstos hayan efectuado.
+
+- Responsable de determinar y documentar el alcance del proyecto según los requerimientos del cliente.
+
+- Realizar la planificación del proyecto según el alcance previamente aprobado.
+
+- Determinar los recursos que serán necesarios.
+
+- Deberá tener en cuenta las normas legales y directivas de la empresa para encaminar el proyecto.
+
+- Planifica con el Coordinador de Desarrollo los tiempos de las actividades a realizar en el Plan de Actividades una vez aprobado por el cliente el alcance del proyecto.
+
+- Recepcionar a través del líder del proyecto los cambios que el cliente requiera en un proyecto en ejecución evalúan la factibilidad e impacto de los cambios. Deberá gestionar los costos, tiempos, etc. que implica el cambio requerido.
+
+- Elabora con el Coordinador de Desarrollo el Gantt del Proyecto de desarrollo luego de la aprobación del Plan de actividades.
+
+- Revisar con el Coordinador de Desarrollo y/o analista de desarrollo el avance del proyecto.
+
+- **Ejecutivo de cuentas**
+
+- Canalizar una atención inmediata a sus clientes.
+
+- Comunicar a la gerencia de proyectos los requerimientos de su cliente.
+
+- Mantener constante comunicación y seguimiento a su cliente.
+
+- **Del ****Oficial de Seguridad (OSI)**
+
+- Coordinar el desarrollo y la actualización de las normas, procedimiento y formatos que forman parte de los controles relacionados con la seguridad de la información.
+
+- Promover la creación y actualización de las políticas de seguridad informática.
+
+- **En general pa****ra todos los responsables del proceso**
+
+- Cumplir con la política del SIG y la Política Antisoborno de la empresa, en el ámbito de la gestión de la calidad, seguridad de la información y del cumplimiento antisoborno, denunciando de buena fe o sobre la base de una creencia razonable, en confianza y sin temor a represalias.
+
+			DEFINICIONES
+
+- **Cliente Interno: **Es el usuario que puede generar un requerimiento y que pertenece a Dacta.
+
+- **Cliente Dacta: **Son aquellas personas que han adquirido previamente algún producto o servicio de la empresa.
+
+- **Herramienta de gestión de proyectos: **es una herramienta para la gestión de proyectos y actividades.
+
+- **Petición: **Actividades de distintos proyectos, asignando tareas y subtareas con una de fecha de inicio y fin.
+
+- **Equipo Técnico:**** **Conformado por todos los actores que intervienen en el proyecto por parte de DACTA, Coordinador de Desarrollo, Líder del Proyecto, Analista Programador, Ejecutivo de cuentas y el Coordinador de Consultoría Integrens.
+
+			DOCUMENTOS DE REFERENCIAS
+
+- ISO 9000:2015 (Sistema de Gestión de Calidad – Fundamentos y Vocabulario).
+
+- ISO 9001:2015 (Sistema de Gestión de la Calidad). 
+
+- ISO 27001:2022 (Sistema de Gestión de Seguridad de la Información).
+
+- ISO 37001:2016 (Sistema de Gestión Antisoborno)
+
+- ISO 31000:2018 (Gestión de Riesgos)
+
+- L-E-SIG-012 Política Específica de Desarrollo Seguro
+
+			PROCEDIMIENTO
+
+| **N°** | **Actividades** | **Descripción** | **Responsable** | **Registros** |
+| --- | --- | --- | --- | --- |
+| **DETERMINACION DEL ALCANCE** |
+|  | Recepción del requerimiento | **Clientes normales:** Recibe el correo de la aprobación de la factibilidad del ante proyecto con el requerimiento del cliente entregado por el Gerente de Proyectos y/o el encargado del proceso comercial. **Clientes de gran envergadura****: ** En el caso de clientes de gran envergadura la gerencia de proyectos designará un ejecutivo de cuentas para la atención de los proyectos requeridos por el cliente. Para el inicio de estos proyectos el ejecutivo de cuentas comunica a la gerencia de proyectos y/o encargado del proceso comercial sobre el requerimiento para su pronta atención. | Líder del proyecto Coordinador de Desarrollo Ejecutivo de cuenta | • Correo aprobando factibilidad del requerimiento |
+|  | Planificación de reunión con cliente | Toma contacto con el cliente. Planificar reunión técnica con el cliente, comunicando la necesidad de la presencia de los que más conocen del requerimiento a atender. En el caso de proyectos relacionados con la Facturación Electrónica en el cual el desarrollo se basa en normas legales, procedimientos de terceros establecidos, instructivos, etc., se convocará al Analista Programador encargado del proyecto y a los especialistas que se requieran. | Líder del proyecto Coordinador de Desarrollo | - |
+|  | Determinación del alcance del ante proyecto y requerimiento funcional | Para determinar el alcance del ante proyecto, el responsable del levantamiento de la información debe identificar uno de los escenarios siguientes: **1.3.1. ** **Si el cliente tiene un proceso implementado ** **En lo posible debe recopilar la siguiente documentación:** Documento de la definición de requerimiento elaborado por el cliente. Formatos relevantes utilizados por el cliente. **Recopilar la siguiente información:** Tomar notas del proceso del cliente. Si es posible grabar las reuniones cuando lo considere necesario. Aclarar dudas de ambas partes durante la reunión. Si la duda no se puede aclarar en el momento, se tomará nota para enviar respuesta o programar otra visita. Solicitar la presencia de los usuarios que mejor conocen los procesos en las reuniones de levantamiento de información.  **1.3.2. El cliente necesita complementar su proceso.** Solicitar al cliente que elabore un documento de definición del requerimiento, dentro del cual se deberá detallar las actividades a ejecutar del nuevo proceso que desea automatizar. Se debe evaluar el requerimiento y determinar si es necesaria la participación de un especialista de Dacta para apoyar al cliente. Si es un cliente Dacta y de requerir un especialista se deberá ofrecer una asesoría especializada, especificando que ella podría involucrar un costo adicional. De aceptar al cliente deberá ser comunicado al área comercial.   **1.3.3 En el caso de proyectos como la Facturación Electrónica, mejoras o relacionados.** Se deberá tener en cuenta todas las normas legales publicadas en relación a la Facturación Electrónica. Se deberá verificar la existencia o modificación de los documentos publicados por SUNAT como las guías, reglamentos y manuales. Revisar periódicamente las reglas de validación de cada tipo de comprobante electrónico en el portal de SUNAT: [https://cpe.sunat.gob.pe/node/88](https://cpe.sunat.gob.pe/node/88) Se convocará a los especialistas tributarios en caso amerite para realizar consultas a las áreas respectivas de SUNAT. Para conocer el proceso se deberá tomar en cuenta el P-O-DES-093 Procedimiento de Facturación electrónica.   **1.3.4. Consideraciones para ambos** **Aclaraciones**** de actividades con costo en caso sea un cliente Dacta:** La elaboración de prototipos de las ventanas de aplicación implicará un costo adicional. Otras solicitudes de documentos se incluirán en la cotización. **Solicitudes**** no negociables:** Procesos que incluyan malas prácticas. Procesos que vayan en contra de las normas establecidas por las entidades del control del estado peruano o de cualquier otro estado o país. Procesos que contravengan la ley o se presten para cometer delito y/o soborno. | Coordinador de Desarrollo Analista Programador | • F-E-SIG-014 Acta del levantamiento de información. |
+|  | Definición de Requerimientos | Agotadas las reuniones de levantamiento de información se debe elaborar el documento **F-O-DES-001 Definición de Requerimientos del Cliente **en calidad de borrador, teniendo en cuenta:  Todos los alcances definidos.  La complejidad técnica.  Las reglas del negocio del cliente.  Los requisitos de seguridad de la información.  En caso el proyecto sea interno puede utilizar el formato **F****-O-DES-008 Definición de Requerimientos Proyecto Interno**, el cual es un formato más técnico.   Puede haber uno o más borradores de este documento y dependerá de los cambios que surjan del cliente o del personal encargado del proyecto por parte de Dacta.  En caso de un proyecto relacionado como la facturación electrónica, deberá identificar los requerimientos que requiere los sistemas que alimentan con información. Estos deberán ser reportados a la Gerencia de Proyectos para su evaluación.  Comunica al Coordinador de Desarrollo para que cree y configure el anteproyecto en la herramienta de gestión de proyectos, dando los permisos respectivos.  Registra la actividad de la Definición de Requerimientos en la herramienta de gestión de proyectos.   **Nota:** El desarrollo de la facturación electrónica se ha basado en las normativas SUNAT de comprobante de pagos electrónicos. | Coordinador de Desarrollo Analista Programador | • F-O-DES-001 Definición de Requerimientos del Cliente • F-O-DES-008 Definición de Requerimientos Proyecto Interno • Herramienta de gestión de Proyectos |
+|  | Completar la Definición de Requerimientos del Cliente | De ser requerido por el cliente Dacta se indica en **F-O-DES-001 Definición de Requerimientos del Cliente **los documentos** **adicionales**, **prototipeo y el flujograma de los procesos. | Coordinador de Desarrollo Analista Programador | • F-O-DES-001 Definición de Requerimientos del Cliente |
+|  | Realizar la presentación interna del alcance al equipo técnico. | El Coordinador de Desarrollo podrá convocar al Analista Programador, Líder del Proyecto y Coordinador de Consultoría Integrens para exponer el requerimiento del cliente y el alcance que se ha definido en el documento** **luego que se haya remitido su documento técnico, esta se evidencia con el **F-E-SIG-014 Acta del levantamiento de información.**  Para desarrollos de Interfaces ***no es necesario*** ya que la reunión se realiza con el dueño de la interface.  Luego de la exposición, el equipo técnico podrá contribuir a mejorar el documento del requerimiento.  El Coordinador de Desarrollo o la persona que designe deberá generar el **F-E-SIG-014 Acta de reunión con equipo técnico**. | Coordinador de Desarrollo | • F-E-SIG-014 Acta de reunión con equipo técnico • F-O-DES-001 Definición de Requerimientos del Cliente |
+|  | Generación de la versión final del documento de Definición de Requerimientos | Intercambiar con el cliente el documento de la definición de requerimiento para su revisión y modificación en caso aplique.  Una vez culminado las revisiones se procederá a generar la versión final.  En el caso de clientes Dacta deberá:   Aclarar al cliente los detalles de cómo debe ser aprobado el **F-O-DES-001 Definición de Requerimientos del Cliente.** Incluir al inicio del documento la descripción **“Importante”,** en la cual se detallará las condiciones de la aprobación del documento.  Registra el tiempo total de la elaboración del documento en la herramienta de gestión de proyectos.  Se almacena el documento en la herramienta de gestión de proyectos. | Coordinador de Desarrollo | • F-O-DES-001 Definición de Requerimientos del Cliente • F-O-DES-008 Definición de Requerimientos Proyecto Interno • Herramienta de gestión de Proyectos |
+|  | Aprobación de Definición de Requerimientos | En caso sea un proyecto de un cliente DACTA (externo)  El Líder del proyecto coordinará con el cliente para la revisión del documento de Definición de Requerimientos** **por los usuarios responsables de cada proceso.  El Coordinador por parte del cliente deberá asegurarse que el documento contenga todo lo requerido en el alcance, por lo tanto, es la persona que deberá aprobar el requerimiento final. La aprobación por el cliente se realiza mediante un correo al Líder del proyecto de Dacta. El líder del proyecto deberá guardar la copia del correo de la aprobación por parte del cliente. En caso sea un proyecto de Interface ***no se requiere*** la aprobación ya que el requerimiento basado en lo que especifica el documento técnico del dueño de la interface. En caso de un proyecto interno Al Analista Programador o Coordinador de Desarrollo envía correo al Gerente de Proyectos para su aprobación. | Líder del Proyecto Analista Programador / Coordinador de Desarrollo | • Correo del cliente indicando aprobación del alcance del requerimiento • Correo de aprobación por la Gerencia de Proyectos |
+|  | Diseño de la arquitectura de la aplicación | Con la aprobación de la Definición de Requerimientos del Cliente [F-O-DES-001] por parte del cliente se realiza el diseño de la arquitectura de la aplicación.   Definir con el equipo de desarrollo asignado al proyecto la arquitectura técnica de la solución, incluyendo los componentes principales, su interacción, los requisitos no funcionales y las medidas de seguridad aplicadas desde el diseño.  También se tendrá  en cuenta la: Política Específica de Principios de Arquitectura y Diseño Seguro [L-E-SIG-017] | Coordinador de desarrollo | • F-O-DES-010 Arquitectura Técnica con consideraciones de seguridad |
+| **PLANIFICACION DEL  ANTE PROYECTO ** |
+|  | Planificación del ante proyecto | Una vez aprobado el documento de Definición de Requerimientos se registra la actividad de la redacción del documento del Plan de Actividades del Proyecto en la herramienta de gestión de proyectos.  Se debe detallar cuidadosamente las actividades que involucran la ejecución del nuevo proyecto.  Reflejar todas las actividades en el **F-O-DES-002 Plan de Actividades del Proyecto**.  Identificar las necesidades de recursos a emplear.  Identificar al responsable de llevar a cabo el desarrollo.  Identificar la disponibilidad del recurso idóneo para llevar a cabo el desarrollo.  Elaborar por cada etapa la lista de actividades en base del alcance.  Registrar los tiempos de las actividades según la complejidad de los procesos.  Registrar los tiempos en caso exista actividades de integración con terceros. Asimismo, registrar el tiempo dedicado de la generación de la documentación a entregar. De ser necesario se deberá revisar el Plan de Actividades del Proyecto con el equipo técnico.  El documento terminado ya revisado, deberá ser enviado al Gerente de Proyectos para su aprobación.  Se almacena el documento en la herramienta de gestión de proyectos.  **Importante:** Verificar los tiempos estimados con el equipo técnico, de ser necesario brindar un tiempo de holgura en actividades más complejas. En el caso que se trate de un proyecto de integración se reflejan en el **F-O-DES-002 Plan de Actividades del Proyecto **las actividades del **Manual de Integración proporcionado por el cliente.** | Analista Programador / Coordinador de Desarrollo | • Herramienta de gestión de Proyectos • F-O-DES-002 Plan de Actividades del Proyecto |
+|  | Revisión del Plan de Actividades | Aprueba o rechaza el documento, serán motivos de revisión: Si la descripción de actividades no está en una redacción clara y entendible. Si los tiempos son excesivos en actividades de manera obvia y se pueden hacer en menor tiempo. Las actividades repetidas que por error se pueden haber consignado. | Gerente de Proyectos / Asistente Comercial | - |
+|  | Ajustes al Plan de Actividades del Proyecto | De existir alguna observación se deberá corregir el documento para nuevamente ser enviado al Gerente de Proyectos y/o Asistente Comercial. | Coordinador de Desarrollo | • F-O-DES-002 Plan de Actividades del Proyecto |
+|  | Aprobación del Plan de Actividades del Proyecto | Procede a la aprobación del **F-O-DES-002 Plan de Actividades del Proyecto **una vez levantada las correcciones.  El **F-O-DES-002 Plan de Actividades del Proyecto **será revisado y aprobado, de preferencia dentro de las 48 horas** **de días hábiles** **desde su recepción.  **Para los clientes Dacta** envía el documento a la Gerencia Comercial para que proceda a elaborar la **Cotización Desarrollo de software.** **Para los clientes internos** aprueba, pospone o rechaza el inicio del desarrollo. | Gerente de Proyectos / Asistente Comercial | • Correo indicando la aprobación del plan de actividades |
+|  | Registro de tiempos de elaboración y aprobación | Registra los tiempos empleados desde la generación hasta la aprobación del **F-**** ****-O-DES-002 Plan de Actividades del ****Proyecto** por el Gerente de Proyectos en la herramienta de gestión de proyectos. | Coordinador de Desarrollo | • Herramienta de gestión de proyectos |
+| **PLANIFICACION DEL DESARROLLO** |
+|  | Planificación para el Desarrollo | Recibe la confirmación vía correo electrónico de la Gerencia de Proyectos y/o Comercial para determinar la fecha de inicio del desarrollo.  Registra el inicio de la redacción del Gantt del Proyecto de desarrollo en la herramienta de gestión de proyectos.  Planificar la disponibilidad de los recursos.  Revisión del Plan de Actividades del Proyecto con el equipo de trabajo asignado para definir el inicio del proyecto.  Coordinar las fechas de la integración con terceros en caso amerite.  Coordina con el Gerente de Proyectos y/o Asistente Comercial la fecha de inicio y elabora el **F-O-DES-003 Gan****tt del Proyecto de desarrollo****.**  Comunica la fecha de inicio del proyecto.  Generar el cronograma del proyecto de acuerdo al plan de actividades.  Se almacena el Gantt a la herramienta de gestión de proyectos.  Registra el tiempo final del desarrollo del documento **F-O-DES-003 Gantt del Proyecto de desarrollo** en la herramienta de gestión de proyectos.   **Nota:** En los proyectos internos el Gantt es referencial ya que se da prioridad a los proyectos de Clientes Dacta. | Coordinador de Desarrollo | • Correo autorizando el inicio del proyecto. • Herramienta de gestión de proyectos • F-O-DES-003 Gantt del Proyecto de desarrollo. |
+|  | Ejecución del proyecto | Seguir con procedimiento **P-O-DES-091 Procedimiento de ejecución de proyectos.** |  |  |
+
+			REGISTROS
+
+- Acta del levantamiento de información (F-E-SIG-014).
+
+- Acta de reunión con equipo técnico (F-E-SIG-014).
+
+- Correos.
+
+- Definición de Requerimientos del Cliente (F-O-DES-001)
+
+- Definición de Requerimientos Proyecto Interno (F-O-DES-008)
+
+- Arquitectura Técnica con consideraciones de seguridad (F-O-DES-010)
+
+- Plan de Actividades del Proyecto (F-O-DES-002).
+
+- Gantt del Proyecto de desarrollo (F-O-DES-003).
+
+- Herramienta de Gestión de Proyectos.
+
+			ANEXOS 
+
+- N.A.
+
+			CONTROL DE CAMBIOS
+
+| **Versión** | **Fecha** | **Descripción** | **Elaborado por** | **Revisado por** | **Aprobado por** |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 30/06/2021 | Emisión | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 2 | 01/09/2021 | Actualización | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 3 | 12/01/2022 | Actualización | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 4 | 12/05/2023 | Actualización | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 5 | 22/05/2024 | Actualización | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 6 | 20/10/2025 | Actualización | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| **Firmas de la versión vigente** |  |  |  |
+|  | A. Morales | S. Rafaile | G. Rafaile |
+| **Identificación de las modificaciones** |
+| **Versión** | **Descripción de cambios** |
+| 2 | Se ha incluido el formato F-O-DES-008 Definición de Requerimientos Proyecto Interno y el uso en caso de los proyectos internos |
+| 3 | Se especifica que para proyectos de Interfaces no es necesario: 1.6 Reunión con equipo técnico ni el acta correspondiente Se especifica que para proyectos de Interfaces no se requiere: 1.8 Aprobación de requerimientos por el cliente Actividad 3.1 Se añade una nota indicando que el Gantt es referencial para proyectos internos. Actividad 1.7 Se indica que documento Definición de Requerimientos del Cliente (F-O-DES-001), se almacena en la herramienta de gestión de proyectos. Actividad 2.1 Se indica que documento Plan de Actividades del Proyecto (F-O-DES-002), se almacena en la herramienta de gestión de proyectos. Actividad 3.1 Se indica que documento 7.7. Gantt del Proyecto de desarrollo (F-O-DES-003), se almacena en la herramienta de gestión de proyectos. |
+| 4 | Se actualizó el nuevo logo de DACTA en el documento. Se actualizaron los puestos de trabajo de acuerdo al organigrama de DACTA. Se agregó el ejecutivo de cuentas como responsable de clientes de gran envergadura. |
+| 5 | Se actualiza dentro del procedimiento la norma ISO según nueva versión ISO 27001:2022. Actividad 1.4. y 1.5. -- Se agregó al Coordinador de Desarrollo como responsable de la actividad. Actividad 2.2. y 2.4 -- Se agrega como responsable también al Asistente Comercial de las actividades. |
+| 6 | Actividad 1.9. – Se adiciona la Diseño de la arquitectura de la aplicación. |

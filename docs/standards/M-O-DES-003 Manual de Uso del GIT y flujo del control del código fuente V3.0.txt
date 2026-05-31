@@ -1,0 +1,162 @@
+|  | SISTEMA INTEGRADO DE GESTIÓN | **Código** | M-O-DES-003 |
+| --- | --- | --- | --- |
+|  | **MANUAL DE USO DEL GIT Y FLUJO DEL CONTROL DEL CÓDIGO FUENTE** | **Versión** | 2.0 |
+|  |  | **Vigente desde** | 12/05/2023 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | **Página** | 9 de 9 |
+
+		**1.**	**Introducción**	2
+
+		**2.**	**Alcance**	2
+
+		**3.**	**Gestión del GitLab**	2
+
+		**4.**	**Gestión de roles**	2
+
+		**5.**	**Gestión de branch’s**	3
+
+		**6.**	**Gestión de Tags**	3
+
+		**7.**	**Gestión de Forks**	3
+
+		**8.**	**Flujo de trabajo**	4
+
+		**9.**	**CONTROL DE CAMBIOS**	9
+
+- **Introducción**
+
+El Git es una herramienta esencial para el control de las versiones del código fuente y permite el trabajo en equipo. Esta herramienta, a su vez, forma parte del flujo de desarrollo DevOps y su uso es importante para que este proceso funcione. Por ello, este documento tiene como finalidad explicar el uso de esta herramienta, revisar conceptos claves y como aplicarlo en el flujo de desarrollo.
+
+- **Alcance**
+
+Este documento trabaja los siguientes temas:
+
+- Gestión del GitLab
+
+- Gestión de Roles
+
+- Gestión de Branch (ramas)
+
+- Gestión de Tags (etiquetas)
+
+- Gestión de Forks (bifurcación)
+
+- Flujo de Trabajo
+
+- **Gestión del ****GitLab**
+
+- Para el uso del Git, se ha instalado GitLab en el servidor 192.168.50.127 y se accede a él a través del puerto 5000. GitLab es un servicio web de control de versiones y desarrollo de software colaborativo basado en Git, es decir; es el repositorio central de las fuentes de las aplicaciones.
+
+- Para empezar a usar el git, es necesario registrarse en GitLab para obtener acceso a los repositorios [^1]. Los usuarios que se registraran son el personal de Desarrollo y Testing.
+
+- Cada proyecto debe formar parte de un grupo dentro del GitLab [^2].
+
+- Cuando se crea un proyecto nuevo en GitLab [^3], el usuario administrador o el jefe de área debe asignar los permisos correspondientes y el grupo para que, el personal involucrado tenga acceso al repositorio.
+
+- Solo el jefe de área puede utilizar la rama master, crear tag’s en él y crear un fork.
+
+- **Gestión de roles**
+
+El manejo de los roles es importante, ya que el personal de desarrollo y soporte cuentan con funciones diferentes e intervienen en procesos específicos del flujo de desarrollo de software. Por ello, se definen tres grupos de usuarios: “Desarrollo”, “Testing” y “Jefe de Área”.
+
+- **Gestión de ****branch’s**
+
+Las ramas son entornos de trabajo independientes. Sirven para modificar el contenido de un repositorio sin afectar a otras versiones estables del mismo. Y luego, da la posibilidad de combinar los cambios en una sola rama.  A continuación, se mencionarán las ramas que se utilizarán:
+
+- **Master**. La rama Master es la primera rama que se crea al momento de crear cualquier repositorio en Git y es la que se usará en producción. El propósito de esta rama es mantener la última versión estable del proyecto que se esté trabajando.
+
+- **Beta**. Esta rama se crea a partir de la rama “Master” al inicio del proyecto. Se utiliza para subir versiones betas del proyecto que se está trabajando. Y una vez se decide pasarlo a producción, debe hacerse un merge con la rama “Master”.
+
+- **Testing**. Esta rama se crea a partir del “Beta” al inicio del proyecto. Se usa para subir las versiones del proyecto que serán revisadas por el equipo de Testing. Una vez todas las pruebas sean exitosas, se procede a realizar un merge con la rama “Beta”.
+
+- **Dev****. **Esta rama se crea a partir de “Testing” al inicio del proyecto. Se utiliza como repositorio común entre todos los desarrolladores para incorporar los cambios que realizan sobre las fuentes. Luego, “Testing” realiza un merge con esta rama.
+
+- **Req_requerimiento****. **Esta rama se crea a partir de “Dev” y en él se trabajan los requerimientos del proyecto. Es decir; cada desarrollador debe crear una rama que identifique al requerimiento que se este trabajando. Y posteriormente se realiza un merge con la rama “Dev”. Esta rama es temporal y debe borrarse después de finalizar el requerimiento.[^4]
+
+- **Gestión de ****Tags**
+
+Un Tag es un nombre que se usa para marcar un punto específico en la historia de un repositorio. Esto permite obtener una versión especifica del proyecto dentro de su línea del tiempo. Es útil cuando un cliente necesita una versión compatible con sus requerimientos. Sin embargo, los tags son inmutables, es decir; no se pueden realizar modificaciones sobre él.
+
+Los tags deben crearse solo al lanzar un release.
+
+- **Gestión de Forks**
+
+	
+
+El fork o bifurcación es una copia del repositorio original. Y en él se puede realizar modificaciones sin afectar el repositorio de donde se generó. En este caso, su uso será para modificar versiones antiguas del proyecto con la posibilidad de incorporar su código a otras versiones y a la versión principal. El uso de las ramas, roles y tags es igual como en todos los proyectos.
+
+Los forks solo deben crearse al momento de cerrar una versión.
+
+- **Flujo de trabajo**
+
+- El jefe de área encargado del proyecto, debe crear un nuevo repositorio y asignar los permisos correspondientes.
+
+- Luego, se deben crear las ramas en el siguiente orden:
+
+Master
+
+Beta
+
+Testing
+
+Dev
+
+Esto significa que, para crear una rama, primero se ubica sobre su antecesor y crea la siguiente. Ejemplo:
+
+| $ git branch //esto indica sobre que rama estoy *master $ git branch beta //se crea la rama beta $ git checkout beta //me ubica sobre la rama beta $ git branch testing //creo la rama testing desde la rama beta ... //Y así hasta la rama dev. No olvidar subir todos los cambios al GitLab |
+| --- |
+
+- Una vez creada las ramas, el desarrollador debe clonar el repositorio y crear su rama de requerimiento para empezar a trabajar. Ejemplo:
+
+| $ git clone -b dev git@192.168.50.127:tfs/integrens_framework.git //clona el repositorio $ git branch req_planilla $ git checkout req_planilla |
+| --- |
+
+- Cuando termine de desarrollar sobre la rama de requerimiento, debe pasar los cambios a la rama dev. Ejemplo:
+
+| $ git add . //agrega nuevos archivos al repositorio $ git commit -m “cambio de prueba” //guardo mis cambios $ git checkout dev //me ubica sobre la rama dev $ git merge req_planilla $ git commit -m “cambio de prueba en dev” $ git pull origin dev //actualizo mi repositorio local $ git push origin dev //envio los cambios al repositorio remoto //Y regreso sobre mi rama que seguiré trabajando //Adicional: Si quiero obtener los cambios que hay en dev a mi rama, el código es el siguiente. $ git merge dev //este comando se ejecuta desde la rama de requerimientos |
+| --- |
+
+- Cuando empiece la etapa de testing, los usuarios de dicha área, deben obtener el código fuente y ubicarse sobre la rama dev, para posteriormente adjuntarla a la rama testing. Ejemplo:
+
+| $ git clone git@192.168.50.127:tfs/integrens_framework.git $ git checkout dev $ git pull origin dev $ git checkout testing $ git merge dev $ git commit -m “nuevo cambio en testing” $ git pull origin testing $ git push origin testing |
+| --- |
+
+Esto hace que los últimos cambios estén disponibles en la rama testing y se pueda crear la imagen Docker para poder desplegarlo en el servidor de testing.
+
+- El mismo flujo de testing se repite en la rama beta para obtener los últimos cambios y desplegarlo en su servidor correspondiente. Ejemplo:
+
+| $ git checkout testing $ git pull origin testing $ git checkout beta $ git merge testing $ git commit -m “nuevo cambio en testing” $ git pull origin beta $ git push origin beta |
+| --- |
+
+- Y, por último, lo mismo se realiza en la rama master.
+
+| $ git checkout beta $ git pull origin beta $ git checkout master $ git merge beta $ git commit -m “nuevo cambio en beta” $ git pull origin master $ git push origin master |
+| --- |
+
+- Cuando se decida que una versión es “release”, se debe crear un tag sobre master. Ejemplo:
+
+| //en la rama master $ git tag -a v8.3.0 -m “mi tag es la versión 8.3.0” //crea un tag con el nombre v8.3.0 y le agrega un comentario $ git push origin v8.3.0 //sube el tag al repositorio remoto $ git tag // muestra la lista de todos los tags $ git tag -d v8.3.0 // elimina el tag |
+| --- |
+
+- Cuando se cierre una versión debe crearse un fork sobre otro grupo. Este fork funcionara como un proyecto aparte cuando se requiera modificar dicha versión; y el flujo del git es el mismo que los demás repositorios. Ejemplo:
+
+- Y el flujo de todo este proceso se vería así:
+
+- **Control de Cambios**
+
+| **Versión** | **Fecha** | **Descripción** | **Elaborado por** | **Revisado por** | **Aprobado por** |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 30/06/2021 | Emisión | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 2 | 12/05/2023 | Actualización | **Coordinador de Desarrollo** | **Gerente de Proyectos** | **Gerente General** |
+| 3 |  |  |  |  |  |
+| **Firmas de la versión vigente** |  |  |  |
+|  | A. Morales | S. Rafaile | G. Rafaile |
+| **Identificación de las modificaciones** |
+| **Versión** | **Descripción de cambios** |
+| 2 | Se actualizó el nuevo logo de DACTA en el documento. |
+|  |  |
+|  |  |
+
+[^1]: Como registrarse al GitLab https://www.youtube.com/watch?v=7EBiRhso1HA
+[^2]: Como crear un grupo https://docs.gitlab.com/ee/user/group/
+[^3]: Como crear un proyecto https://docs.gitlab.com/ee/gitlab-basics/create-project.html
+[^4]: Por seguridad se deben subir los cambios de la rama de requerimientos al servidor del GitLab para evitar pérdidas de código mientras no se pasen los cambios a la rama Dev

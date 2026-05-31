@@ -1,0 +1,151 @@
+|  | SISTEMA INTEGRADO DE GESTIÓN | Código | P-O-ACS-001 |
+| --- | --- | --- | --- |
+|  | **PROCEDIMIENTO DE ASEGURAMIENTO DE LA CALIDAD DE SOFTWARE** | Versión | 5.0 |
+|  |  | Vigente desde | 20/10/2025 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | Página | 2 de 9 |
+
+|  | SISTEMA INTEGRADO DE GESTIÓN | Código | P-O-ACS-001 |
+| --- | --- | --- | --- |
+|  | **PROCEDIMIENTO DE ASEGURAMIENTO DE LA CALIDAD DE SOFTWARE** | Versión | 5.0 |
+|  |  | Vigente desde | 20/10/2025 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | Página | 7 de 9 |
+
+|  | SISTEMA INTEGRADO DE GESTIÓN | Código | P-O-ACS-001 |
+| --- | --- | --- | --- |
+|  | **PROCEDIMIENTO DE ASEGURAMIENTO DE LA CALIDAD DE SOFTWARE** | Versión | 5.0 |
+|  |  | Vigente desde | 20/10/2025 |
+| DACTA SAC | **DOCUMENTO CONTROLADO** | Página | 9 de 9 |
+
+		OBJETIVO
+
+Definir el procedimiento a seguir para asegurar la calidad de las aplicaciones que desarrolla DACTA, mediante métodos de trabajo y herramientas para identificar defectos en el software con el fin de alcanzar una aplicación estable y funcional.
+
+		ALCANCE 
+
+Este procedimiento aplica para los desarrollos nuevos y para las atenciones de soporte de 3er nivel. 
+
+		RESPONSABLES
+
+- **Coordinador de Consultoría ****Integrens****: **
+
+- Asegurar la disponibilidad de los ambientes controlados para efectos de pruebas.
+
+- Garantizar el correcto funcionamiento de los ejecutables.
+
+- Velar que las aplicaciones se ejecuten sin defectos o errores de funcionalidad.
+
+- Aportar con mejoras el documento del requerimiento realizado por el personal de desarrollo en la reunión del equipo técnico.
+
+- **C****onsultor ****Integrens**
+
+*******Testing****: **
+
+- Ejecutar las pruebas de acuerdo al plan de pruebas establecido.
+
+- Mantener registros actualizados en la herramienta de gestión de proyectos.
+
+- Adicionar casos de pruebas al plan de pruebas inicial de ser necesario.
+
+- **En general para todos los responsables del proceso**
+
+- Cumplir con la política del SIG y la Política Antisoborno de la empresa, en el ámbito de la gestión de la calidad, seguridad de la información y del cumplimiento antisoborno, denunciando de buena fe o sobre la base de una creencia razonable, en confianza y sin temor a represalias.
+
+		DEFINICIONES
+
+- **Plan de prueba: **Es la descripción de todos los métodos o casos que se utilizarán para verificar que el software satisface la especificación del producto y los requisitos del cliente, se encuentra en la herramienta de gestión de proyectos.
+
+- **Caso de prueba: **Lista los ítems específicos que serán probados y describe los pasos detallados que serán seguidos para verificar la calidad del software.
+
+- **Informe de pruebas:** Describe el avance en porcentaje de las pruebas ejecutadas, y en los casos donde se identifiquen defectos se detallará el error por caso de forma individual. 
+
+- **Soporte 3er nivel: **Es una atención brindada por el personal de desarrollo y de ser posible por el responsable del desarrollo de la aplicación. 
+
+- **Ejecutable:** Es un archivo diseñado para poder iniciar un programa. En su interior están las instrucciones precisas para poder ejecutar un programa determinado o varios.
+
+- **Versión: **Es la codificación que se asigna a un conjunto de desarrollos y mejoras implementadas al software desarrollado por Dacta.
+
+- **Ambientes de pruebas: **Son los espacios controlados dentro de los servidores propios donde se ejecutan los casos de pruebas de forma segura.
+
+- **Instructivo de Configuración** **y F****uncionalidad:** Documento que guía al usuario en el uso de una funcionalidad específica.
+
+- **Testing****: **Es la realización de pruebas sobre el software con el fin de obtener información acerca de su calidad, depurando defectos encontrados y asegurar su correcto funcionamiento.
+
+- **Pruebas**** de integración: **Validar la integración entre los diferentes módulos que componen la solución con el fin de garantizar que su operación integrada es correcta.
+
+- **Pruebas**** de funcionalidad: **Asegurar el trabajo apropiado de los requisitos funcionales, tomando como objetos de prueba cada uno de los casos de uso.
+
+- **Pruebas**** de rendimiento: **Pruebas para determinar lo más rápido que un sistema realiza una tarea en ciertas condiciones de trabajo.
+
+- **Pruebas**** de automatización: **Evitar que el Consultor Integrens tenga que ejecutar las pruebas manualmente de forma repetitiva.
+
+		DOCUMENTOS DE REFERENCIAS
+
+- ISO 9000:2015 (Sistema de Gestión de Calidad – Fundamentos y Vocabulario).
+
+- ISO 9001:2015 (Sistema de Gestión de la Calidad). 
+
+- ISO 27001:2022 (Sistemas de Gestión de Seguridad de la Información).
+
+- ISO 37001:2016 (Sistema de Gestión Anti soborno)
+
+- ISO 31000:2018 (Gestión de Riesgos)
+
+		PROCEDIMIENTO
+
+| **Nº** | **Actividades** | **Descripción** | **Responsable** | **Registros** |
+| --- | --- | --- | --- | --- |
+| ** PLANEAMIENTO** |
+|  | Identificación de anteproyecto o requerimiento | Recibir la comunicación de convocatoria del Coordinador de Desarrollo y equipo técnico para la provisión o la revisión del alcance del proyecto a desarrollar de acuerdo a la definición de requerimiento del cliente, documentos o registros adicionales. Estimar los tiempos en las actividades del proyecto que participará el Coordinador de Consultoría Integrens y el equipo de soporte al usuario, lo que quedará plasmado en **F-O-DES-002 Plan de Actividades del Proyecto.** | Coordinador de Consultoría Integrens Coordinador de Desarrollo | F-O-DES-002 Plan de Actividades del Proyecto. F-O-DES-001 Definición de Requerimientos del Cliente Herramienta de gestión de proyectos |
+|  | Definir equipo de trabajo | Definir el equipo de trabajo de acuerdo al alcance del proyecto en el **F-O-DES-002** **Plan de actividades del proyecto.** Al validar y aprobar el plan de pruebas se establecerán revisiones conjuntas para la estipulación de tiempos y asignación de responsables, registrarlos en la Herramienta de gestión de proyectos. | Coordinador de Consultoría Integrens Coordinador de Desarrollo | F-O-DES-002 Plan de Actividades del Proyecto Herramienta de gestión de proyectos |
+|  | Estrategia de prueba | Para el testing de software se tienen definido los siguientes tipos de prueba: Pruebas de funcionalidad Pruebas de integración Pruebas de rendimiento Pruebas de automatización **Importante:** No necesariamente aplica en ese orden y existirán situaciones en donde no se requiera implementar la totalidad de los tipos de pruebas. | Coordinador de Consultoría Integrens Consultor Integrens | Herramienta de gestión de proyectos |
+| **ANALISIS Y DISEÑO DE TESTING** |
+|  | Capacitación al personal de Soporte al Usuario | Convocar al Coordinador de Consultoría Integrens para la capacitación del producto desarrollado. Capacitar al personal de soporte al usuario sobre el producto desarrollado. Generar el **F-E-SIG-014 Acta** de capacitación. | Analista programador / Programador Coordinador de Consultoría Integrens | F-E-SIG-014 Acta |
+|  | Elaboración de los casos de prueba | Proceder con la elaboración de los casos de pruebas que buscarán garantizar los requisitos establecidos en el documento: **F-****O-DES-001 ****Definición de Requerimientos del Cliente** | Coordinador de Consultoría Integrens Consultor Integrens Analista Programador / Programador | Herramienta de gestión de proyectos |
+|  |  | 2.3.1 Interface │ Facturación Electrónica |  |  |
+|  |  | Proceder con la elaboración de los casos de pruebas que buscarán garantizar los requisitos establecidos en los documentos **I-O-SPU-001 Instructivo – Interface CP-RT** **I-O-SPU-002 Instructivo – Interface FA-BO-NC-ND** |  |  |
+|  | Adición o actualización de los casos de pruebas | Se adicionan los nuevos casos de prueba en la Herramienta de gestión de proyectos que se manifiesten durante la ejecución o que no hayan sido contemplados en el documento original. | Coordinador de Consultoría Integrens Consultor Integrens Analista programador / Programador | Herramienta de gestión de proyectos |
+|  |  |  |  |  |
+| **IMPLEMENTACIÓN Y EJECUCIÓN** |
+|  | Solicitud de entorno de pruebas | Implementar o solicitar al Coordinador de TI el entorno de pruebas que puede llegar a incluir: Información de cliente. Base de datos. Credencial de acceso o permisos de aplicación. Alojamiento de recursos o aplicaciones (repositorios o rutas compartidas). Servidores físicos/virtuales de pruebas. | Coordinador de Consultoría Integrens | Herramienta de gestión de proyectos |
+|  | Tratamiento de datos para ambiente de pruebas | Para enmascarar data sensible el personal de soporte encargado del proyecto deberá ejecutar el instructivo técnico de anonimización. ** I-O-ACS-004 ****Instructivo Tratamiento de datos de pruebas** | Coodinador de Consultoría Ingregres Consultor Integrens | Bitácora o log de ejecución del script (pantallazo o salida SQL) en Herramienta de gestión de proyectos |
+|  | Preparación del entorno o ambiente de pruebas | **Sobre el Entorno de ****Testing** El entorno o ambiente de pruebas puede incluir: Sistema y aplicaciones Servidor de base de datos Datos de prueba Sistema operativo cliente-servidor **Importante:** Para las pruebas de aplicación en entornos web es posible que se tenga que instalar o configurar diferentes navegadores. Para las aplicaciones de escritorio es posible que se tenga que instalar o configurar diferentes sistemas operativos. | Coordinador de Consultoría Integrens Consultor Integrens | Herramienta de gestión de proyectos |
+|  | Ejecución de los casos de prueba e identificación de errores y observaciones | Cada caso tiene un estado que deberá ser actualizado a medida en que se va ejecutando, los estatus son los siguientes: *Pendiente*: El caso de prueba no ha sido ejecutado. *Ejecutado*: El caso de prueba ha sido validado. *Listo para revisión*: El caso de prueba fue corregido por el área de desarrollo. *En proceso*: El caso de prueba se encuentra en desarrollo. Reportar a través de la Herramienta de gestión de proyectos al Analista Programador los casos de errores para la aplicación inmediata de solución hasta que se logre la solución. | Coordinador de Consultoría Integrens Consultor Integrens | Herramienta de gestión de proyectos |
+| **CIERRE DEL PLAN DE PRUEBAS** |
+|  | Generación de los entregables | De ser necesario, se complementa el documento **F-O-DES-004** **Instructivo de Configuración y funcionalidad **para el cliente. | Coordinador de Consultoría Integrens Consultor Integrens Personal de Desarrollo de Software | Herramienta de gestión de proyectos F-O-DES-004 Instructivo de configuración y funcionalidad |
+|  | Versión BETA | Previo al inicio de la implementación se habilita un espacio (Versión BETA) donde el usuario con algunos permisos limitados hará uso del software y haga unas pruebas de lo que ha pedido, después de esto el cliente brindará la conformidad o en caso contrario indicará las mejoras o errores a corregir antes de continuar con su implementación. El objetivo de la versión BETA es que se puedan encontrar y corregir los últimos errores antes de lanzar la versión oficial. | Coordinador de Consultoría Integrens Consultor Integrens Coordinador de TI | Correo indicando la conformidad/ F-E-SIG-014 Acta |
+|  | Pase Área de Implementación | Comunicar al cliente que se va a comenzar con la implementación de acuerdo al Gantt del proyecto según el **P-O-SPU-002 Implementación de nuevas aplicaciones.** Brindar conformidad o cambio de la fecha de inicio de implementación por parte del cliente a trasvés de correo electrónico. | Coordinador de Consultoría Integrens | Correo |
+|  | Eliminar base de datos | La base de datos de Testing debe ser borrada una vez culminado el plan de pruebas y satisfagan lo establecido en el análisis de requerimiento. (Colocar el documentos) | Coordinador de Consultoría Integrens | Registro de Bases de Datos |
+
+		REGISTROS
+
+- F-O-DES-001 Definición de Requerimientos del Cliente
+
+- F-O-DES-002 Plan de Actividades del Proyecto.
+
+- F-O-DES-004 Instructivo de Configuración y funcionalidad
+
+- Herramienta de gestión de proyectos
+
+- F-E-SIG-014 Acta
+
+- ANEXOS 
+
+- N.A.
+
+	- CONTROL DE CAMBIOS
+
+| **Versión** | **Fecha** | **Descripción** | **Elaborado por** | **Revisado por** | **Aprobado por** |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 30/06/2021 | Emisión | **Coordinador de Aseguramiento de la Calidad de Software** | **Gerente de Proyectos** | **Gerente General** |
+| 2 | 22/09/2021 | Modificación | **Coordinador de Aseguramiento de la Calidad de Software** | **Gerente de Proyectos** | **Gerente General** |
+| 3 | 12/05/2023 | Actualización | **Coordinador de Consultoría Integrens** | **Gerente de Proyectos** | **Gerente General** |
+| 4 | 06/03/2024 | Actualización | **Coordinador de Consultoría Integrens** | **Gerente de Proyectos** | **Gerente General** |
+| 5 | 20/10/2025 | Actualización | **Coordinador de Consultoría Integrens** | **Gerente de Proyectos** | **Gerente General** |
+| **Firmas de la versión vigente** |  |  |  |
+|  | M. Molina | S. Rafaile | G. Rafaile |
+| **Identificación de las modificaciones** |
+| **Versión** | **Descripción de cambios** |
+| 2 | Cumplir con la política del SIG y la Política Antisoborno de la empresa, en el ámbito de la gestión de la calidad, seguridad de la información y del cumplimiento antisoborno, denunciando de buena fe o sobre la base de una creencia razonable, en confianza y sin temor a represalias |
+| 3 | Se actualizó el nuevo logo de DACTA en el documento. Se actualizaron los puestos de trabajo de acuerdo al organigrama de DACTA 2023. |
+| 4 | Se actualiza dentro del procedimiento la norma ISO según nueva versión ISO 27001:2022. |
+| 5 | Se adicionó 3.2 Tratamiento de datos para ambiente de pruebas |
