@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-006 - Filtros de Tickets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:var(--font);color:var(--t);padding:32px}.wrap{max-width:1180px;margin:auto}.panel{background:#fff;border:1px solid var(--bl);border-radius:16px;box-shadow:0 8px 32px rgba(91,51,212,.10);overflow:hidden}
+    .head{padding:22px 24px;border-bottom:1px solid var(--bl);display:flex;justify-content:space-between;align-items:center}.head h1{margin:0;font-size:22px}.head p{margin:6px 0 0;color:var(--l);font-size:13px}.btn{height:42px;border:0;border-radius:10px;padding:0 16px;font-weight:800;background:var(--p);color:#fff}.btn.clear{background:#fff;color:var(--m);border:1px solid var(--b)}
+    .filters{padding:22px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.search{grid-column:1/-1}label{display:block;font-size:12px;font-weight:800;color:var(--m);margin-bottom:7px}input,select{width:100%;height:44px;border:1.5px solid var(--b);border-radius:10px;padding:0 12px;font-family:var(--font);color:var(--m);background:#fff}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;padding:0 24px 22px}.chip{background:#EDE8FB;color:var(--p);border-radius:20px;padding:6px 10px;font-size:12px;font-weight:800}.result{border-top:1px solid var(--bl);padding:18px 24px;background:#F8F7FF;display:flex;justify-content:space-between;color:var(--m);font-size:13px}
+    @media(max-width:900px){body{padding:16px}.filters{grid-template-columns:1fr}.head,.result{display:grid;gap:12px}.btn{width:100%}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <div class="head"><div><h1>Filtros avanzados de tickets</h1><p>HU-013 - búsqueda combinable, fechas y debounce 500ms.</p></div><div><button class="btn clear">Limpiar filtros</button> <button class="btn">Aplicar</button></div></div>
+      <div class="filters">
+        <div class="search"><label>Búsqueda libre</label><input value="factura PDF tienda" /></div>
+        <div><label>Estado</label><select><option>Nuevo + En progreso</option></select></div>
+        <div><label>Urgencia</label><select><option>Crítica + Alta</option></select></div>
+        <div><label>Módulo</label><select><option>FIN-FAC</option></select></div>
+        <div><label>Agente</label><select><option>Carlos</option></select></div>
+        <div><label>Canal</label><select><option>Correo</option></select></div>
+        <div><label>Tipo</label><select><option>BUG</option></select></div>
+        <div><label>Fecha desde</label><input type="date" value="2026-05-01" /></div>
+        <div><label>Fecha hasta</label><input type="date" value="2026-05-31" /></div>
+      </div>
+      <div class="chips"><span class="chip">Estado: abiertos</span><span class="chip">Urgencia: crítica/alta</span><span class="chip">Módulo: FIN-FAC</span><span class="chip">Canal: correo</span></div>
+      <div class="result"><strong>17 tickets encontrados</strong><span>Resultado actualizado en tiempo real sin recargar la página.</span></div>
+    </section>
+  </main>
+</body>
+</html>

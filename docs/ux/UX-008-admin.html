@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-008 - Administración</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--sb:#353C44;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:var(--font);color:var(--t)}.app{display:grid;grid-template-columns:260px 1fr;min-height:100vh}aside{background:var(--sb);color:#fff}.brand{padding:24px 20px;background:linear-gradient(135deg,var(--pd),var(--p));font-size:22px;font-weight:800}.brand span{color:var(--c)}.nav{margin:14px 10px;padding:11px 14px;border-radius:8px;color:rgba(255,255,255,.7)}.active{background:rgba(91,51,212,.3);border-left:3px solid var(--c);color:#fff}
+    header{height:64px;background:#fff;border-bottom:1px solid var(--b);display:flex;align-items:center;justify-content:space-between;padding:0 24px}.content{padding:24px}.tabs{display:flex;gap:8px;margin-bottom:18px}.tab{padding:10px 14px;border-radius:10px;border:1px solid var(--b);background:#fff;font-weight:800;color:var(--m)}.tab.on{background:var(--p);color:#fff;border-color:var(--p)}.btn{height:42px;border:0;border-radius:10px;background:var(--p);color:#fff;padding:0 16px;font-weight:800}
+    .card{background:#fff;border:1px solid var(--bl);border-radius:12px;box-shadow:0 8px 32px rgba(91,51,212,.08);overflow:hidden}.row{display:grid;grid-template-columns:1.2fr 1fr 130px 110px 220px;gap:12px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--bl);font-size:13px}.head{background:#F8F7FF;text-transform:uppercase;font-size:11px;color:var(--l);font-weight:800}.pill{border-radius:20px;padding:4px 10px;width:max-content;font-size:11px;font-weight:800}.ok{background:#DCFCE7;color:#16A34A}.warn{background:#FFEDD5;color:#EA580C}.role{background:#EDE8FB;color:var(--p)}
+    .actions{display:flex;gap:8px}.mini{border:1px solid var(--b);background:#fff;border-radius:8px;padding:6px 9px;font-size:12px;color:var(--m);font-weight:700}
+    @media(max-width:1000px){.app{grid-template-columns:1fr}aside{display:none}.row{grid-template-columns:1fr}.head{display:none}header{display:grid;height:auto;gap:12px;padding:16px}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside><div class="brand">INTE<span>GRENS</span></div><div class="nav active">Administración</div></aside>
+  <main><header><strong>Administración del sistema</strong><button class="btn">Crear usuario</button></header>
+    <section class="content">
+      <div class="tabs"><div class="tab on">Usuarios</div><div class="tab">Módulos Integrens</div><div class="tab">Plantillas</div></div>
+      <div class="card">
+        <div class="row head"><div>Usuario</div><div>Correo</div><div>Rol</div><div>Estado</div><div>Acciones</div></div>
+        <div class="row"><div>Carlos Agente</div><div>carlos.agente@dacta.com.pe</div><div><span class="pill role">AGENTE</span></div><div><span class="pill ok">Activo</span></div><div class="actions"><span class="mini">Editar</span><span class="mini">Desactivar</span></div></div>
+        <div class="row"><div>Antonny Agente</div><div>antonny.agente@dacta.com.pe</div><div><span class="pill role">AGENTE</span></div><div><span class="pill warn">Bloqueado</span></div><div class="actions"><span class="mini">Desbloquear</span><span class="mini">Editar</span></div></div>
+        <div class="row"><div>Sebastian Rafaile</div><div>sebastian.rafaile@dacta.com.pe</div><div><span class="pill role">GERENCIA</span></div><div><span class="pill ok">Activo</span></div><div class="actions"><span class="mini">Editar</span><span class="mini">Desactivar</span></div></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

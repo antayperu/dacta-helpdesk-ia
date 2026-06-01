@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-003 - Panel de Tickets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--sb:#353C44;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;font-family:var(--font);background:var(--bg);color:var(--t)}.app{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+    aside{background:var(--sb);color:#fff}.brand{padding:24px 20px;background:linear-gradient(135deg,var(--pd),var(--p));font-weight:800;font-size:22px}.brand span{color:var(--c)}
+    nav{padding:14px 10px}.nav{padding:11px 14px;margin:2px 0;border-radius:8px;color:rgba(255,255,255,.66);font-size:13.5px}.nav.active{background:rgba(91,51,212,.3);color:#fff;border-left:3px solid var(--c)}
+    header{height:64px;background:#fff;border-bottom:1px solid var(--b);display:flex;justify-content:space-between;align-items:center;padding:0 24px}.title{font-size:22px;font-weight:800}.content{padding:24px}
+    .top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:18px}.btn{background:var(--p);color:#fff;border:0;border-radius:10px;height:44px;padding:0 18px;font-weight:700}.btn.alt{background:var(--c)}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:16px}.kpi{background:#fff;border:1px solid var(--bl);border-radius:12px;padding:16px}.kpi b{display:block;font-size:24px;color:var(--p)}.kpi span{font-size:11px;color:var(--l);font-weight:800;text-transform:uppercase}
+    .filters{display:grid;grid-template-columns:1.6fr repeat(4,1fr) auto;gap:10px;background:#fff;border:1px solid var(--bl);border-radius:12px;padding:14px;margin-bottom:14px}
+    input,select{height:40px;border:1.5px solid var(--b);border-radius:10px;padding:0 12px;font-family:var(--font);color:var(--m);background:#fff}
+    .table{background:#fff;border:1px solid var(--bl);border-radius:12px;overflow:hidden}.row{display:grid;grid-template-columns:100px 1.4fr 1fr 130px 120px 130px 110px;gap:12px;align-items:center;padding:15px 16px;border-bottom:1px solid var(--bl);font-size:13px}.head{background:#F8F7FF;color:var(--l);font-size:11px;text-transform:uppercase;font-weight:800}.code{font-weight:800;color:var(--p)}
+    .badge{display:inline-flex;width:max-content;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:800}.crit{background:#FEE2E2;color:#DC2626}.alta{background:#FFEDD5;color:#EA580C}.media{background:#FEF9C3;color:#CA8A04}.nuevo{background:#E0F7FB;color:#0E7FA8}.prog{background:#EDE8FB;color:var(--p)}
+    .pager{display:flex;justify-content:flex-end;gap:8px;padding:14px}.page{border:1px solid var(--b);background:#fff;border-radius:8px;padding:7px 11px;color:var(--m)}
+    @media(max-width:1000px){.app{grid-template-columns:1fr}aside{display:none}.kpis,.filters{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:6px}.head{display:none}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside><div class="brand">INTE<span>GRENS</span></div><nav><div class="nav active">Mis Tickets</div><div class="nav">Cola de Tickets</div><div class="nav">Todos los Tickets</div><div class="nav">Dashboard</div></nav></aside>
+  <main><header><div class="title">Panel de tickets</div><button class="btn alt">Crear ticket manual</button></header>
+    <section class="content">
+      <div class="top"><div><h1>Cola operativa</h1><p>Tickets asignados y sin asignar para Carlos, Antonny y Diego.</p></div><button class="btn">Actualizar</button></div>
+      <div class="kpis"><div class="kpi"><span>Total</span><b>128</b></div><div class="kpi"><span>Críticos</span><b>4</b></div><div class="kpi"><span>Mis tickets</span><b>16</b></div><div class="kpi"><span>Sin asignar</span><b>9</b></div></div>
+      <div class="filters"><input placeholder="Buscar por cliente, asunto o contenido" /><select><option>Estado</option></select><select><option>Urgencia</option></select><select><option>Módulo</option></select><select><option>Agente</option></select><button class="btn">Filtrar</button></div>
+      <div class="table">
+        <div class="row head"><div>Código</div><div>Asunto</div><div>Cliente</div><div>Estado</div><div>Urgencia</div><div>Módulo</div><div>Agente</div></div>
+        <div class="row"><div class="code">TK-00041</div><div>No genera PDF de factura</div><div>Distribuidora Lima</div><div><span class="badge nuevo">Nuevo</span></div><div><span class="badge crit">Crítica</span></div><div>FIN-FAC</div><div>Sin asignar</div></div>
+        <div class="row"><div class="code">TK-00040</div><div>Error de stock en punto de venta</div><div>Retail Norte</div><div><span class="badge prog">En progreso</span></div><div><span class="badge alta">Alta</span></div><div>CMR-POS</div><div>Carlos</div></div>
+        <div class="row"><div class="code">TK-00039</div><div>Consulta de cierre diario</div><div>Market Perú</div><div><span class="badge prog">Pendiente</span></div><div><span class="badge media">Media</span></div><div>CMR-VEN</div><div>Antonny</div></div>
+        <div class="pager"><span class="page">Anterior</span><span class="page">1</span><span class="page">2</span><span class="page">Siguiente</span></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

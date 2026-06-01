@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-005 - Crear Ticket Manual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--sb:#353C44;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(135deg,var(--pd),var(--sb));font-family:var(--font);display:grid;place-items:center;color:var(--t)}
+    .modal{width:min(760px,calc(100vw - 32px));background:#fff;border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.24);overflow:hidden}.head{padding:22px 24px;background:linear-gradient(135deg,var(--pd),var(--p));color:#fff}.head h1{margin:0;font-size:22px}.head p{margin:6px 0 0;color:rgba(255,255,255,.70);font-size:13px}
+    .body{padding:24px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.full{grid-column:1/-1}label{display:block;font-size:12px;font-weight:800;color:var(--m);margin-bottom:6px}
+    input,select,textarea{width:100%;border:1.5px solid var(--b);border-radius:10px;font-family:var(--font);font-size:14px;color:var(--t);padding:0 14px}input,select{height:48px}textarea{height:118px;padding-top:12px;resize:vertical}
+    .hint{margin-top:6px;color:var(--l);font-size:12px}.erp{background:#F8F7FF;border:1px solid var(--bl);border-radius:12px;padding:14px;margin-top:18px}.erp h2{font-size:15px;margin:0 0 12px}
+    .foot{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:#F8F7FF;border-top:1px solid var(--bl)}.btn{height:44px;border:0;border-radius:10px;padding:0 18px;font-weight:800}.primary{background:var(--p);color:#fff}.ghost{background:#fff;color:var(--m);border:1px solid var(--b)}
+    .success{display:flex;gap:10px;align-items:center;color:#16A34A;font-size:13px;font-weight:800}.pill{background:#DCFCE7;border-radius:999px;padding:5px 10px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.foot{display:grid;gap:12px}.btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <div class="head"><h1>Crear ticket manual por llamada</h1><p>HU-019 - El agente registra el caso y el cliente recibe su número por correo.</p></div>
+    <div class="body">
+      <div class="grid">
+        <div class="full"><label>Cliente Integrens</label><input value="Distribuidora Lima SAC - facturacion@cliente.pe" /><div class="hint">Busca por empresa, RUC o correo registrado en Integrens.</div></div>
+        <div><label>Urgencia</label><select><option>Crítica</option><option>Alta</option><option>Media</option><option>Baja</option></select></div>
+        <div><label>Módulo</label><select><option>FIN-FAC - Facturación</option><option>CMR-POS - Punto de Venta</option><option>LOG-ALM - Almacén</option></select></div>
+        <div class="full"><label>Asunto</label><input value="No genera PDF de factura electrónica" /></div>
+        <div class="full"><label>Descripción del problema</label><textarea>Cliente llama indicando que no puede generar el PDF de facturación. Operación detenida en tiendas.</textarea></div>
+      </div>
+      <div class="erp"><h2>Contexto ERP opcional preparado para v2.0</h2><div class="grid"><input placeholder="Versión ERP" /><input placeholder="Usuario ERP" /><input class="full" placeholder="Pantalla / acción realizada" /></div></div>
+    </div>
+    <div class="foot"><div class="success"><span class="pill">TK-00042</span> Vista de confirmación posterior a creación</div><div><button class="btn ghost">Cancelar</button> <button class="btn primary">Crear ticket</button></div></div>
+  </div>
+</body>
+</html>

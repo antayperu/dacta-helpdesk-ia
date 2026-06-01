@@ -299,7 +299,8 @@ Como gerencia (Sebastian Rafaile)
 Quiero ver métricas del equipo de soporte en tiempo real
 Para monitorear el rendimiento y tomar decisiones con datos.
 Criterios:
-- Métricas: tickets por estado, urgencia, módulo, agente y canal de origen.
+- Métricas: tickets por estado, urgencia, módulo, agente, canal de origen y cliente/empresa.
+- Ranking de clientes con mayor demanda de soporte.
 - Tiempo promedio de resolución de tickets.
 - Actualización automática sin recargar la página.
 - Solo lectura — sin acceso a tickets. Colores Integrens.

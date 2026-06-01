@@ -960,6 +960,17 @@ Retorna métricas estándar + métricas de tiempo:
   "porUrgencia": {},
   "porModulo": [],
   "porCanal": {},
+  "porCliente": [
+    {
+      "empresaCliente": "Distribuidora Lima SAC",
+      "totalTickets": 0,
+      "ticketsCriticos": 0,
+      "moduloMasFrecuente": "FIN-FAC",
+      "frtPromedioMinutos": 0,
+      "ttrPromedioHoras": 0,
+      "variacionPeriodoAnterior": 0
+    }
+  ],
   "porAgente": [
     {
       "nombre": "Carlos",
@@ -980,8 +991,10 @@ Cálculos de tiempo (descontando n_minutos_pausado):
 - FRT (First Response Time) = dt_primer_respuesta − dt_creado
 - TTR (Time to Resolution) = dt_resuelto − dt_creado − n_minutos_pausado
 - Handle Time = dt_resuelto − dt_asignado − n_minutos_pausado
+- Ranking por cliente = agrupación por s_empresa_cliente / s_nombre_cliente,
+  con total de tickets, críticos, módulo más frecuente, FRT, TTR y variación vs período anterior.
 
-**Verificación:** GET /api/metricas retorna JSON con FRT, TTR y Handle Time calculados.
+**Verificación:** GET /api/metricas retorna JSON con FRT, TTR, Handle Time y ranking por cliente calculados.
 
 ---
 
@@ -993,8 +1006,14 @@ Tarjetas resumen (fila superior):
 
 Gráficos (Recharts, colores Integrens):
 - Barras: tickets por módulo (#5B33D4)
+- Barras horizontales: Top clientes con más tickets
 - Torta: distribución por urgencia
 - Líneas: evolución tickets por día
+
+Ranking de clientes:
+- Top 5 empresas con más tickets generados
+- Columnas: empresa, total tickets, críticos, módulo más frecuente, FRT promedio, TTR promedio, variación vs período anterior
+- Destacar cliente con mayor volumen de soporte y cliente con mayor crecimiento
 
 Tabla comparativa de agentes:
 - Carlos / Antonny / Diego
@@ -1006,7 +1025,7 @@ Actualización automática cada 60 segundos.
 Solo lectura — sin botones de acción.
 Colores Integrens obligatorios.
 
-**Verificación:** Dashboard carga métricas reales incluyendo FRT y TTR por agente. Filtro de período actualiza todos los gráficos.
+**Verificación:** Dashboard carga métricas reales incluyendo FRT/TTR por agente y ranking por cliente. Filtro de período actualiza todos los gráficos.
 
 ---
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-004 - Detalle de Ticket</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--sb:#353C44;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:var(--font);color:var(--t)}.app{display:grid;grid-template-columns:260px 1fr;min-height:100vh}aside{background:var(--sb);color:#fff}.brand{padding:24px 20px;background:linear-gradient(135deg,var(--pd),var(--p));font-size:22px;font-weight:800}.brand span{color:var(--c)}
+    .nav{margin:14px 10px;padding:11px 14px;border-radius:8px;color:rgba(255,255,255,.7)}.nav.active{background:rgba(91,51,212,.3);border-left:3px solid var(--c);color:#fff}
+    header{height:64px;background:#fff;border-bottom:1px solid var(--b);display:flex;align-items:center;justify-content:space-between;padding:0 24px}.btn{height:42px;border:0;border-radius:10px;background:var(--p);color:#fff;padding:0 16px;font-weight:700}.btn.secondary{background:var(--c)}.content{padding:24px}
+    .ticket-head{background:#fff;border:1px solid var(--bl);border-radius:12px;padding:20px;margin-bottom:18px;display:flex;justify-content:space-between;gap:20px}.code{font-size:28px;font-weight:800;color:var(--p)}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .badge{padding:4px 10px;border-radius:20px;font-size:11px;font-weight:800}.crit{background:#FEE2E2;color:#DC2626}.prog{background:#EDE8FB;color:var(--p)}.mail{background:#E0F7FB;color:#0E7FA8}
+    .layout{display:grid;grid-template-columns:1.5fr .9fr;gap:18px}.card{background:#fff;border:1px solid var(--bl);border-radius:12px;padding:18px;margin-bottom:18px}.card h2{font-size:17px;margin:0 0 12px}.muted{color:var(--l);font-size:12px}.field{display:grid;grid-template-columns:140px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--bl);font-size:13px}.field b{color:var(--m)}
+    .message{line-height:1.7;color:var(--m);background:#F8F7FF;border:1px solid var(--bl);border-radius:10px;padding:14px}.score{height:10px;background:#EEEAFD;border-radius:99px;overflow:hidden}.score span{display:block;height:100%;width:86%;background:var(--p)}
+    .timeline{display:grid;gap:12px}.event{border-left:3px solid var(--c);padding-left:12px;font-size:13px}.comment{border:1px solid var(--bl);border-radius:10px;padding:12px;margin-top:10px}.internal{background:#FFF7ED}.public{background:#F8F7FF}
+    .actions{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.actions .btn{width:100%}
+    @media(max-width:1000px){.app{grid-template-columns:1fr}aside{display:none}.layout,.ticket-head{grid-template-columns:1fr;display:block}.field{grid-template-columns:1fr}.actions{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside><div class="brand">INTE<span>GRENS</span></div><div class="nav active">Detalle de Ticket</div></aside>
+  <main><header><strong>Detalle completo</strong><button class="btn secondary">Volver al panel</button></header>
+    <section class="content">
+      <div class="ticket-head">
+        <div><div class="code">TK-00041</div><h1>No genera PDF de factura electrónica</h1><div class="meta"><span class="badge prog">En progreso</span><span class="badge crit">Crítica</span><span class="badge mail">Correo</span></div></div>
+        <div class="actions"><button class="btn">Tomar ticket</button><button class="btn secondary">Cambiar estado</button><button class="btn">Reasignar</button><button class="btn secondary">Corregir IA</button></div>
+      </div>
+      <div class="layout">
+        <div>
+          <div class="card"><h2>Mensaje original</h2><p class="message">Buenos días, desde las 9:15 no podemos generar el PDF de facturación electrónica. La operación está detenida en todas las tiendas. Adjuntamos captura del error.</p></div>
+          <div class="card"><h2>Comentarios</h2><div class="comment public"><b>Respuesta al cliente</b><br/>Estamos revisando el servicio de generación PDF.</div><div class="comment internal"><b>Nota interna</b><br/>Validar Intelifac y logs del módulo FIN-FAC.</div></div>
+          <div class="card"><h2>Historial</h2><div class="timeline"><div class="event"><b>Nuevo</b><br/><span class="muted">IA creó el ticket - 31/05/2026 09:18</span></div><div class="event"><b>En progreso</b><br/><span class="muted">Carlos tomó el ticket - 31/05/2026 09:24</span></div></div></div>
+        </div>
+        <aside>
+          <div class="card"><h2>Cliente</h2><div class="field"><b>Empresa</b><span>Distribuidora Lima SAC</span></div><div class="field"><b>Correo</b><span>facturacion@cliente.pe</span></div><div class="field"><b>Teléfono</b><span>+51 999 888 777</span></div></div>
+          <div class="card"><h2>Clasificación IA</h2><div class="field"><b>Tipo</b><span>BUG</span></div><div class="field"><b>Aplicación</b><span>Intelifac</span></div><div class="field"><b>Módulo</b><span>FIN-FAC</span></div><div class="field"><b>Confianza</b><span>86%</span></div><div class="score"><span></span></div></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

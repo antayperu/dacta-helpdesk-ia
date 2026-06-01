@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-010 - Responsive Mobile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--sb:#353C44;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:var(--font);color:var(--t);padding:20px}.wrap{display:grid;grid-template-columns:repeat(3,360px);gap:22px;overflow:auto}.phone{width:360px;height:760px;background:#fff;border:10px solid #1E1B2E;border-radius:34px;overflow:hidden;box-shadow:0 20px 60px rgba(30,27,46,.22)}.top{height:58px;background:linear-gradient(135deg,var(--pd),var(--p));color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font-weight:800}.dot{width:8px;height:8px;background:var(--c);border-radius:99px}.screen{padding:16px;background:var(--bg);height:calc(100% - 58px);overflow:auto}h2{font-size:18px;margin:0 0 12px}.card{background:#fff;border:1px solid var(--bl);border-radius:12px;padding:14px;margin-bottom:12px}.kpi{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric b{display:block;font-size:22px;color:var(--p)}.ticket{border-left:4px solid var(--p)}.badge{display:inline-block;border-radius:20px;padding:4px 9px;font-size:11px;font-weight:800;background:#FEE2E2;color:#DC2626}.btn{height:44px;border:0;border-radius:10px;background:var(--p);color:#fff;width:100%;font-weight:800}.field{height:46px;border:1.5px solid var(--b);border-radius:10px;background:#fff;margin-bottom:10px;padding:13px;color:var(--l);font-size:13px}.nav{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--b);display:grid;grid-template-columns:repeat(3,1fr);font-size:11px;text-align:center;color:var(--m)}.nav div{padding:10px}.nav .on{color:var(--p);font-weight:800}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="phone"><div class="top">Login <span class="dot"></span></div><div class="screen"><h2>Bienvenido</h2><div class="card"><div class="field">usuario@dacta.com.pe</div><div class="field">Contraseña</div><button class="btn">Ingresar</button></div><div class="card">Acceso restringido - Solo red DACTA</div></div></section>
+    <section class="phone"><div class="top">Tickets <span class="dot"></span></div><div class="screen"><h2>Panel móvil</h2><div class="kpi"><div class="card metric"><span>Total</span><b>128</b></div><div class="card metric"><span>Críticos</span><b>4</b></div></div><div class="field">Buscar ticket</div><div class="card ticket"><b>TK-00041</b><br/>No genera PDF factura<br/><span class="badge">Crítica</span></div><div class="card ticket"><b>TK-00040</b><br/>Error stock POS<br/><span class="badge">Alta</span></div></div><div class="nav"><div class="on">Tickets</div><div>Dashboard</div><div>Perfil</div></div></section>
+    <section class="phone"><div class="top">Detalle <span class="dot"></span></div><div class="screen"><h2>TK-00041</h2><div class="card"><span class="badge">Crítica</span><p>No genera PDF de factura electrónica. Operación detenida.</p></div><div class="card"><b>Clasificación IA</b><br/>BUG / Intelifac / FIN-FAC / 86%</div><button class="btn">Cambiar estado</button><br/><br/><button class="btn">Responder cliente</button></div></section>
+  </div>
+</body>
+</html>

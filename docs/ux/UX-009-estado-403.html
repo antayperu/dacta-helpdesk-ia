@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-009 - Acceso Denegado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--p:#5B33D4;--pd:#453E72;--sb:#353C44;--c:#38C1E1;--bg:#F2F0FE;--w:#fff;--t:#1E1B2E;--m:#4A4560;--l:#8B87A8;--b:#DDD9F5;--bl:#EEEAFF;--font:'Plus Jakarta Sans',sans-serif}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(135deg,var(--pd),var(--sb));font-family:var(--font);display:grid;place-items:center;color:var(--t);padding:24px}.card{max-width:520px;background:#fff;border-radius:20px;padding:38px;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.25)}.mark{width:76px;height:76px;border-radius:24px;background:#EDE8FB;color:var(--p);display:grid;place-items:center;font-size:30px;font-weight:800;margin:0 auto 20px}h1{font-size:28px;margin:0 0 10px}p{color:var(--m);line-height:1.65}.role{background:#F8F7FF;border:1px solid var(--bl);border-radius:12px;padding:12px;margin:18px 0;color:var(--m);font-size:13px}.btn{height:46px;border:0;border-radius:10px;background:var(--p);color:#fff;padding:0 20px;font-weight:800}.secondary{background:#fff;color:var(--m);border:1px solid var(--b);margin-left:8px}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="mark">403</div>
+    <h1>Acceso denegado</h1>
+    <p>Tu rol actual no tiene permisos para acceder a esta sección. La navegación debe respetar HU-017 y los guards de ruta por rol.</p>
+    <div class="role"><strong>Rol detectado:</strong> GERENCIA<br/><strong>Ruta solicitada:</strong> /admin</div>
+    <button class="btn">Ir al dashboard</button><button class="btn secondary">Cerrar sesión</button>
+  </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX-002 - Layout Principal Integrens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --int-purple:#5B33D4; --int-purple-dark:#453E72; --int-purple-deep:#3B2A8F;
+      --int-sidebar:#353C44; --int-sidebar-hover:#2C333B; --int-cyan:#38C1E1;
+      --int-bg:#F2F0FE; --int-white:#FFFFFF; --int-text:#1E1B2E; --int-mid:#4A4560;
+      --int-light:#8B87A8; --int-border:#DDD9F5; --int-border-light:#EEEAFF;
+      --shadow:0 8px 32px rgba(91,51,212,.10); --font:'Plus Jakarta Sans',sans-serif;
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:var(--font);background:var(--int-bg);color:var(--int-text)}
+    .app{min-height:100vh;display:grid;grid-template-columns:260px 1fr}
+    .sidebar{background:var(--int-sidebar);color:#fff;display:flex;flex-direction:column;min-height:100vh}
+    .side-head{background:linear-gradient(135deg,var(--int-purple-dark),var(--int-purple));padding:24px 20px}
+    .logo{font-size:22px;font-weight:800;letter-spacing:.04em}.logo span{color:var(--int-cyan)}
+    .sub{font-size:11px;color:rgba(255,255,255,.62);margin-top:6px}
+    .menu{padding:14px 10px;display:grid;gap:4px}.item{display:flex;gap:10px;align-items:center;padding:11px 14px;border-radius:8px;color:rgba(255,255,255,.66);font-size:13.5px}
+    .item.active{background:rgba(91,51,212,.30);color:#fff;border-left:3px solid var(--int-cyan);padding-left:11px}
+    .item:hover{background:rgba(255,255,255,.08);color:#fff}.spacer{flex:1}
+    .profile{padding:18px 20px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:rgba(255,255,255,.70)}
+    .main{display:grid;grid-template-rows:64px 1fr}
+    .header{height:64px;background:#fff;border-bottom:1px solid var(--int-border);display:flex;align-items:center;justify-content:space-between;padding:0 24px;box-shadow:0 1px 8px rgba(91,51,212,.06)}
+    .title{font-size:20px;font-weight:800}.user{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--int-mid)}
+    .ia{display:flex;align-items:center;gap:7px;border:1px solid rgba(91,51,212,.18);color:var(--int-purple);background:rgba(91,51,212,.08);border-radius:20px;padding:5px 12px;font-size:12px;font-weight:600}
+    .dot{width:7px;height:7px;background:#22C55E;border-radius:999px}.content{padding:24px}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:20px}
+    .card{background:#fff;border:1px solid var(--int-border-light);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+    .metric{font-size:26px;font-weight:800;color:var(--int-purple)}.label{font-size:12px;text-transform:uppercase;color:var(--int-light);font-weight:700;letter-spacing:.06em}
+    .work{display:grid;grid-template-columns:2fr 1fr;gap:18px}.placeholder{height:360px;border:1px dashed var(--int-border);border-radius:12px;background:linear-gradient(135deg,#fff,#F8F7FF);display:flex;align-items:center;justify-content:center;color:var(--int-light);font-weight:700}
+    @media(max-width:900px){.app{grid-template-columns:1fr}.sidebar{display:none}.grid,.work{grid-template-columns:1fr}.header{padding:0 16px}.content{padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="side-head"><div class="logo">INTE<span>GRENS</span></div><div class="sub">Help Desk IA - v1.0 MVP</div></div>
+      <nav class="menu">
+        <div class="item active">● Mis Tickets</div><div class="item">○ Cola de Tickets</div><div class="item">○ Todos los Tickets</div><div class="item">○ Dashboard</div><div class="item">○ Administración</div>
+      </nav>
+      <div class="spacer"></div>
+      <div class="profile"><strong>Camilo Ortega FR</strong><br/>Supervisor/Admin<br/><br/>Cerrar sesión</div>
+    </aside>
+    <main class="main">
+      <header class="header"><div class="title">Panel principal</div><div class="user"><span class="ia"><span class="dot"></span>IA activa</span><span>Camilo Ortega FR</span></div></header>
+      <section class="content">
+        <div class="grid">
+          <div class="card"><div class="label">Tickets activos</div><div class="metric">42</div></div>
+          <div class="card"><div class="label">Críticos</div><div class="metric">3</div></div>
+          <div class="card"><div class="label">Sin asignar</div><div class="metric">11</div></div>
+          <div class="card"><div class="label">FRT promedio</div><div class="metric">18m</div></div>
+        </div>
+        <div class="work">
+          <div class="placeholder">Área de trabajo según rol seleccionado</div>
+          <div class="placeholder">Resumen lateral / carga de agentes</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
