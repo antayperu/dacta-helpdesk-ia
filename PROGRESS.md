@@ -90,7 +90,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | Tarea | Descripción | Estado | Fecha | IA usada |
 |---|---|---|---|---|
 | TASK-001 | Configurar proyecto Spring Boot base — backend/pom.xml + application.properties | ✅ COMPLETA | 2026-05-31 | Claude Code |
-| TASK-002 | Crear estructura de paquetes Java en com.dacta.helpdesk | ⬜ PENDIENTE | — | — |
+| TASK-002 | Crear estructura de paquetes Java en com.dacta.helpdesk | ✅ COMPLETA | 2026-05-31 | Claude Code |
 | TASK-003 | Crear script BD V001__crear_tablas_principales.sql | ⬜ PENDIENTE | — | — |
 | TASK-004 | Crear script BD V002__datos_iniciales.sql (seed) | ⬜ PENDIENTE | — | — |
 | TASK-005 | Crear entidades JPA — 7 entidades | ⬜ PENDIENTE | — | — |
