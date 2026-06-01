@@ -1,0 +1,32 @@
+# Maven
+backend/target/
+backend/.mvn/
+*.class
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+.env
+*.env.local
+application-local.properties
+
+# Logs
+*.log
+logs/
+
+# Python temp scripts
+docs/ux/_fix_logos*.py
