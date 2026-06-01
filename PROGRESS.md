@@ -1,7 +1,7 @@
 # PROGRESS.md — Control de Progreso del Proyecto
 # DACTA Help Desk IA v1.0
 # Orquestador: Camilo Ortega FR — QE / SDD
-# Última actualización: 2026-05-31
+# Última actualización: 2026-06-01
 
 ---
 
@@ -42,7 +42,8 @@ Al iniciar cualquier sesión con cualquier IA:
 | Documento | Ruta | Para qué |
 |---|---|---|
 | Especificación funcional | docs/specs/SPEC-001-historias-usuario.md | QUÉ construir |
-| Tareas atómicas | docs/specs/TASK-LIST-001-v1.1.md | CÓMO construir |
+| Tareas atómicas por épica | docs/specs/tasks/ | CÓMO construir |
+| Tarea completa archivada | docs/specs/archive/TASK-LIST-001-v1.1-COMPLETO.md | Referencia histórica completa |
 | Design System | docs/skills/INTEGRENS-BRAND-SKILL.md | CÓMO se ve |
 | Reglas del proyecto | AGENTS.md | CÓMO comportarse |
 | Nomenclaturas | CONVENTIONS.md | CÓMO nombrar |
@@ -196,9 +197,9 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 
 ```
 FASE 3 — Implementación:
-████████████████████████████████████████  0/60 tareas completadas
+██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  2/60 tareas completadas
 
-Épica 0 — Cimientos:    ⬜⬜⬜⬜⬜⬜⬜⬜   0/8
+Épica 0 — Cimientos:    ✅✅⬜⬜⬜⬜⬜⬜   2/8
 Épica 1 — Canales:      ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   0/16
 Épica 2 — Motor IA:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜   0/9
 Épica 3 — Frontend:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   0/14
@@ -227,7 +228,7 @@ Lee en este orden:
 2. AGENTS.md — reglas del proyecto
 3. CONVENTIONS.md — nomenclaturas
 4. docs/specs/SPEC-001-historias-usuario.md — qué construir
-5. docs/specs/TASK-LIST-001-v1.1.md — cómo construir
+5. docs/specs/tasks/TASKS-EPICA-0-cimientos.md — cómo construir la siguiente tarea
 6. docs/skills/INTEGRENS-BRAND-SKILL.md — diseño visual
 
 Identifica la primera tarea con estado ⬜ PENDIENTE en PROGRESS.md.

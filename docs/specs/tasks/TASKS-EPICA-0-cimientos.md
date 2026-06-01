@@ -2,7 +2,7 @@
 # DACTA Help Desk IA v1.0
 # Tareas: TASK-001 a TASK-008
 # Orquestador: Camilo Ortega FR
-# Referencia: SPEC-001 v1.1 + TASK-LIST-001-v1.1.md
+# Referencia: SPEC-001 v1.1 + docs/specs/archive/TASK-LIST-001-v1.1-COMPLETO.md
 
 ---
 
