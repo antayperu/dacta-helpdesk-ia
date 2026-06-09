@@ -97,7 +97,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-005 | Crear entidades JPA — 7 entidades | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-006 | Crear repositorios JPA — 7 repositorios | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-007 | Configurar seguridad JWT — JwtUtil + JwtAuthFilter + SecurityConfig | ✅ COMPLETA | 2026-06-08 | Claude Code |
-| TASK-008 | Crear endpoint de login POST /api/auth/login | ⬜ PENDIENTE | — | — |
+| TASK-008 | Crear endpoint de login POST /api/auth/login | ✅ COMPLETA | 2026-06-08 | Claude Code |
 
 ### ÉPICA 1 — RECEPCIÓN AUTOMÁTICA DE CANALES
 > Gmail + WhatsApp + Tickets automáticos + Notificaciones
@@ -199,7 +199,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 FASE 3 — Implementación:
 ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  2/60 tareas completadas
 
-Épica 0 — Cimientos:    ✅✅⬜⬜⬜⬜⬜⬜   2/8
+Épica 0 — Cimientos:    ✅✅✅✅✅✅✅✅   8/8 ✅ COMPLETA
 Épica 1 — Canales:      ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   0/16
 Épica 2 — Motor IA:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜   0/9
 Épica 3 — Frontend:     ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   0/14
