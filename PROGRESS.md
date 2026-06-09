@@ -105,20 +105,20 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 
 | Tarea | Descripción | Estado | Fecha | IA usada |
 |---|---|---|---|---|
-| TASK-009 | Configurar Gmail API — GmailConfig.java | ⬜ PENDIENTE | — | — |
-| TASK-010 | Crear GmailService — leer correos no procesados | ⬜ PENDIENTE | — | — |
-| TASK-011 | Crear WhatsAppService — webhook + envío mensajes | ⬜ PENDIENTE | — | — |
-| TASK-012 | Crear TicketCodeGenerator — códigos TK-00001 | ⬜ PENDIENTE | — | — |
-| TASK-013 | Crear TicketService — crearDesdeCorreo + crearDesdeWhatsApp | ⬜ PENDIENTE | — | — |
-| TASK-014 | Crear DuplicadoService — detección similitud >= 80% | ⬜ PENDIENTE | — | — |
-| TASK-015 | Crear EmailPollingService — scheduler cada 5 minutos | ⬜ PENDIENTE | — | — |
-| TASK-016 | Crear NotificacionService — 5 tipos de notificación | ⬜ PENDIENTE | — | — |
-| TASK-017 | Crear plantillas de notificación — 5 archivos .txt | ⬜ PENDIENTE | — | — |
-| TASK-018 | Crear endpoint POST /api/tickets/manual (HU-019 + DEC-002) | ⬜ PENDIENTE | — | — |
-| TASK-019 | Crear servicio de reapertura automática de tickets | ⬜ PENDIENTE | — | — |
-| TASK-020 | Crear CierreAutomaticoService — scheduler 48h | ⬜ PENDIENTE | — | — |
-| TASK-021 | Crear endpoint GET /api/tickets (lista paginada + filtros) | ⬜ PENDIENTE | — | — |
-| TASK-022 | Crear endpoint GET /api/tickets/{id} (detalle completo) | ⬜ PENDIENTE | — | — |
+| TASK-009 | Configurar Gmail API — GmailConfig.java | ⏸ DIFERIDA | — | Requiere admin Google Workspace |
+| TASK-010 | Crear GmailService — leer correos no procesados | ⏸ DIFERIDA | — | Requiere TASK-009 |
+| TASK-011 | Crear WhatsAppService — webhook + envío mensajes | ⏸ DIFERIDA | — | Requiere credenciales Meta |
+| TASK-012 | Crear TicketCodeGenerator — códigos TK-00001 | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-013 | Crear TicketService — crearManual + reabrir + cerrarAuto | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-014 | Crear DuplicadoService — detección similitud >= 80% | ⏸ DIFERIDA | — | Requiere TASK-010 Gmail |
+| TASK-015 | Crear EmailPollingService — scheduler cada 5 minutos | ⏸ DIFERIDA | — | Requiere TASK-009 |
+| TASK-016 | Crear NotificacionService — 5 tipos de notificación | ⏸ DIFERIDA | — | Requiere TASK-009 |
+| TASK-017 | Crear plantillas de notificación — 5 archivos .txt | ⏸ DIFERIDA | — | Requiere TASK-016 |
+| TASK-018 | Crear endpoint POST /api/tickets/manual (HU-019 + DEC-002) | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-019 | Crear servicio de reapertura automática de tickets | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-020 | Crear CierreAutomaticoService — scheduler 48h | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-021 | Crear endpoint GET /api/tickets (lista paginada + filtros) | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-022 | Crear endpoint GET /api/tickets/{id} (detalle completo) | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-023 | Test de integración Épica 1 | ⬜ PENDIENTE | — | — |
 | TASK-024 | Commit Épica 1 al repositorio GitLab | ⬜ PENDIENTE | — | — |
 
