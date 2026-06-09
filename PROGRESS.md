@@ -1,15 +1,24 @@
 # PROGRESS.md — Control de Progreso del Proyecto
 # DACTA Help Desk IA v1.0
 # Orquestador: Camilo Ortega FR — QE / SDD
-# Última actualización: 2026-06-01
+# Última actualización: 2026-06-09
 
 ---
 
 ## INSTRUCCIÓN OBLIGATORIA PARA TODO AGENTE IA
 
 Antes de ejecutar cualquier tarea, leer este archivo COMPLETO.
-Identificar la primera tarea con estado ⬜ PENDIENTE.
+Identificar la primera tarea con estado ⬜ PENDIENTE (ignorar ⏸ DIFERIDAS).
 Ejecutar SOLO esa tarea — ni una más.
+
+## CONTEXTO TÉCNICO CRÍTICO — LEER ANTES DE ESCRIBIR CÓDIGO JAVA
+
+PROBLEMA CONOCIDO: Lombok no soporta Java 25 + Maven en este proyecto.
+REGLA OBLIGATORIA: Todas las clases Java deben tener métodos getters/setters EXPLÍCITOS.
+NO usar: @Data, @Getter, @Setter, @RequiredArgsConstructor de Lombok en ninguna clase nueva.
+SÍ usar: @Autowired en constructor explícito para inyección de dependencias.
+El pom.xml tiene <release>21</release> — NO cambiar.
+Ver detalle completo en: AGENTS.md o memoria del proyecto.
 Al terminar y recibir aprobación del Orquestador:
   1. Cambiar el estado de ⬜ a ✅
   2. Registrar la fecha en el campo correspondiente
