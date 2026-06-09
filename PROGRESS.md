@@ -96,7 +96,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-004 | Crear script BD V002__datos_iniciales.sql (seed) | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-005 | Crear entidades JPA — 7 entidades | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-006 | Crear repositorios JPA — 7 repositorios | ✅ COMPLETA | 2026-06-08 | Claude Code |
-| TASK-007 | Configurar seguridad JWT — JwtUtil + JwtAuthFilter + SecurityConfig | ⬜ PENDIENTE | — | — |
+| TASK-007 | Configurar seguridad JWT — JwtUtil + JwtAuthFilter + SecurityConfig | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-008 | Crear endpoint de login POST /api/auth/login | ⬜ PENDIENTE | — | — |
 
 ### ÉPICA 1 — RECEPCIÓN AUTOMÁTICA DE CANALES
