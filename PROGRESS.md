@@ -95,7 +95,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-003 | Crear script BD V001__crear_tablas_principales.sql | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-004 | Crear script BD V002__datos_iniciales.sql (seed) | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-005 | Crear entidades JPA — 7 entidades | ✅ COMPLETA | 2026-06-08 | Claude Code |
-| TASK-006 | Crear repositorios JPA — 7 repositorios | ⬜ PENDIENTE | — | — |
+| TASK-006 | Crear repositorios JPA — 7 repositorios | ✅ COMPLETA | 2026-06-08 | Claude Code |
 | TASK-007 | Configurar seguridad JWT — JwtUtil + JwtAuthFilter + SecurityConfig | ⬜ PENDIENTE | — | — |
 | TASK-008 | Crear endpoint de login POST /api/auth/login | ⬜ PENDIENTE | — | — |
 
