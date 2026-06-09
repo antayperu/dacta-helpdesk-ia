@@ -1,17 +1,12 @@
 package com.dacta.helpdesk.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "hds_ticket_historial")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class TicketHistorialEntity {
 
     @Id
@@ -38,4 +33,20 @@ public class TicketHistorialEntity {
     @CreationTimestamp
     @Column(name = "dt_cambio", nullable = false, updatable = false)
     private LocalDateTime dtCambio;
+
+    public TicketHistorialEntity() {}
+
+    public Long getId() { return id; }
+    public TicketEntity getTicket() { return ticket; }
+    public String getEstadoAnterior() { return estadoAnterior; }
+    public String getEstadoNuevo() { return estadoNuevo; }
+    public UsuarioEntity getUsuario() { return usuario; }
+    public String getComentario() { return comentario; }
+    public LocalDateTime getDtCambio() { return dtCambio; }
+
+    public void setTicket(TicketEntity ticket) { this.ticket = ticket; }
+    public void setEstadoAnterior(String estadoAnterior) { this.estadoAnterior = estadoAnterior; }
+    public void setEstadoNuevo(String estadoNuevo) { this.estadoNuevo = estadoNuevo; }
+    public void setUsuario(UsuarioEntity usuario) { this.usuario = usuario; }
+    public void setComentario(String comentario) { this.comentario = comentario; }
 }

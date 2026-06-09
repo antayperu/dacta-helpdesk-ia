@@ -1,7 +1,6 @@
 package com.dacta.helpdesk.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -10,10 +9,6 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "hds_ticket")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class TicketEntity {
 
     @Id
@@ -33,7 +28,6 @@ public class TicketEntity {
     private String canalOrigen;
 
     @Column(nullable = false, length = 20)
-    @Builder.Default
     private String estado = "NUEVO";
 
     @Column(nullable = false, length = 10)
@@ -63,18 +57,15 @@ public class TicketEntity {
     private BigDecimal confianzaIa;
 
     @Column(name = "revisado_ia", nullable = false)
-    @Builder.Default
     private Boolean revisadoIa = false;
 
     @Column(nullable = false)
-    @Builder.Default
     private Boolean duplicado = false;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_ticket_padre")
     private TicketEntity ticketPadre;
 
-    // Campos ERP opcionales — integración futura Integrens (DEC-002)
     @Column(name = "origen_sistema", length = 50)
     private String origenSistema;
 
@@ -99,7 +90,6 @@ public class TicketEntity {
     @Column(name = "screenshot_base64", columnDefinition = "TEXT")
     private String screenshotBase64;
 
-    // Timestamps SLA
     @CreationTimestamp
     @Column(name = "dt_creado", nullable = false, updatable = false)
     private LocalDateTime dtCreado;
@@ -117,10 +107,75 @@ public class TicketEntity {
     private LocalDateTime dtCerrado;
 
     @Column(name = "minutos_pausado", nullable = false)
-    @Builder.Default
     private Integer minutosPausado = 0;
 
     @UpdateTimestamp
     @Column(name = "dt_actualizado", nullable = false)
     private LocalDateTime dtActualizado;
+
+    public TicketEntity() {}
+
+    public Long getId() { return id; }
+    public String getCodigo() { return codigo; }
+    public String getAsunto() { return asunto; }
+    public String getDescripcion() { return descripcion; }
+    public String getCanalOrigen() { return canalOrigen; }
+    public String getEstado() { return estado; }
+    public String getUrgencia() { return urgencia; }
+    public String getTipo() { return tipo; }
+    public String getAplicacion() { return aplicacion; }
+    public ModuloEntity getModulo() { return modulo; }
+    public UsuarioEntity getAgente() { return agente; }
+    public String getCorreoCliente() { return correoCliente; }
+    public String getNombreCliente() { return nombreCliente; }
+    public BigDecimal getConfianzaIa() { return confianzaIa; }
+    public Boolean getRevisadoIa() { return revisadoIa; }
+    public Boolean getDuplicado() { return duplicado; }
+    public TicketEntity getTicketPadre() { return ticketPadre; }
+    public String getOrigenSistema() { return origenSistema; }
+    public String getModuloErp() { return moduloErp; }
+    public String getVersionErp() { return versionErp; }
+    public String getUsuarioErp() { return usuarioErp; }
+    public String getEmpresaCliente() { return empresaCliente; }
+    public String getAccionRealizada() { return accionRealizada; }
+    public String getUrlPantalla() { return urlPantalla; }
+    public String getScreenshotBase64() { return screenshotBase64; }
+    public LocalDateTime getDtCreado() { return dtCreado; }
+    public LocalDateTime getDtAsignado() { return dtAsignado; }
+    public LocalDateTime getDtPrimerRespuesta() { return dtPrimerRespuesta; }
+    public LocalDateTime getDtResuelto() { return dtResuelto; }
+    public LocalDateTime getDtCerrado() { return dtCerrado; }
+    public Integer getMinutosPausado() { return minutosPausado; }
+    public LocalDateTime getDtActualizado() { return dtActualizado; }
+
+    public void setId(Long id) { this.id = id; }
+    public void setCodigo(String codigo) { this.codigo = codigo; }
+    public void setAsunto(String asunto) { this.asunto = asunto; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+    public void setCanalOrigen(String canalOrigen) { this.canalOrigen = canalOrigen; }
+    public void setEstado(String estado) { this.estado = estado; }
+    public void setUrgencia(String urgencia) { this.urgencia = urgencia; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
+    public void setAplicacion(String aplicacion) { this.aplicacion = aplicacion; }
+    public void setModulo(ModuloEntity modulo) { this.modulo = modulo; }
+    public void setAgente(UsuarioEntity agente) { this.agente = agente; }
+    public void setCorreoCliente(String correoCliente) { this.correoCliente = correoCliente; }
+    public void setNombreCliente(String nombreCliente) { this.nombreCliente = nombreCliente; }
+    public void setConfianzaIa(BigDecimal confianzaIa) { this.confianzaIa = confianzaIa; }
+    public void setRevisadoIa(Boolean revisadoIa) { this.revisadoIa = revisadoIa; }
+    public void setDuplicado(Boolean duplicado) { this.duplicado = duplicado; }
+    public void setTicketPadre(TicketEntity ticketPadre) { this.ticketPadre = ticketPadre; }
+    public void setOrigenSistema(String origenSistema) { this.origenSistema = origenSistema; }
+    public void setModuloErp(String moduloErp) { this.moduloErp = moduloErp; }
+    public void setVersionErp(String versionErp) { this.versionErp = versionErp; }
+    public void setUsuarioErp(String usuarioErp) { this.usuarioErp = usuarioErp; }
+    public void setEmpresaCliente(String empresaCliente) { this.empresaCliente = empresaCliente; }
+    public void setAccionRealizada(String accionRealizada) { this.accionRealizada = accionRealizada; }
+    public void setUrlPantalla(String urlPantalla) { this.urlPantalla = urlPantalla; }
+    public void setScreenshotBase64(String screenshotBase64) { this.screenshotBase64 = screenshotBase64; }
+    public void setDtAsignado(LocalDateTime dtAsignado) { this.dtAsignado = dtAsignado; }
+    public void setDtPrimerRespuesta(LocalDateTime dtPrimerRespuesta) { this.dtPrimerRespuesta = dtPrimerRespuesta; }
+    public void setDtResuelto(LocalDateTime dtResuelto) { this.dtResuelto = dtResuelto; }
+    public void setDtCerrado(LocalDateTime dtCerrado) { this.dtCerrado = dtCerrado; }
+    public void setMinutosPausado(Integer minutosPausado) { this.minutosPausado = minutosPausado; }
 }

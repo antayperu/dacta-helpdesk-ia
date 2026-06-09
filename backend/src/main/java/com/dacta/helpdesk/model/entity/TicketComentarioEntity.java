@@ -1,17 +1,12 @@
 package com.dacta.helpdesk.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "hds_ticket_comentario")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class TicketComentarioEntity {
 
     @Id
@@ -30,10 +25,23 @@ public class TicketComentarioEntity {
     private String contenido;
 
     @Column(nullable = false)
-    @Builder.Default
     private Boolean interno = false;
 
     @CreationTimestamp
     @Column(name = "dt_creado", nullable = false, updatable = false)
     private LocalDateTime dtCreado;
+
+    public TicketComentarioEntity() {}
+
+    public Long getId() { return id; }
+    public TicketEntity getTicket() { return ticket; }
+    public UsuarioEntity getUsuario() { return usuario; }
+    public String getContenido() { return contenido; }
+    public Boolean getInterno() { return interno; }
+    public LocalDateTime getDtCreado() { return dtCreado; }
+
+    public void setTicket(TicketEntity ticket) { this.ticket = ticket; }
+    public void setUsuario(UsuarioEntity usuario) { this.usuario = usuario; }
+    public void setContenido(String contenido) { this.contenido = contenido; }
+    public void setInterno(Boolean interno) { this.interno = interno; }
 }

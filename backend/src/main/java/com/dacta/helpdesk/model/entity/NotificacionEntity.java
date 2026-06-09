@@ -1,17 +1,12 @@
 package com.dacta.helpdesk.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "hds_notificacion")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class NotificacionEntity {
 
     @Id
@@ -38,7 +33,6 @@ public class NotificacionEntity {
     private String estadoTicket;
 
     @Column(nullable = false)
-    @Builder.Default
     private Boolean enviado = false;
 
     @CreationTimestamp
@@ -47,4 +41,26 @@ public class NotificacionEntity {
 
     @Column(name = "dt_enviado")
     private LocalDateTime dtEnviado;
+
+    public NotificacionEntity() {}
+
+    public Long getId() { return id; }
+    public TicketEntity getTicket() { return ticket; }
+    public String getCanal() { return canal; }
+    public String getDestinatario() { return destinatario; }
+    public String getAsunto() { return asunto; }
+    public String getCuerpo() { return cuerpo; }
+    public String getEstadoTicket() { return estadoTicket; }
+    public Boolean getEnviado() { return enviado; }
+    public LocalDateTime getDtCreado() { return dtCreado; }
+    public LocalDateTime getDtEnviado() { return dtEnviado; }
+
+    public void setTicket(TicketEntity ticket) { this.ticket = ticket; }
+    public void setCanal(String canal) { this.canal = canal; }
+    public void setDestinatario(String destinatario) { this.destinatario = destinatario; }
+    public void setAsunto(String asunto) { this.asunto = asunto; }
+    public void setCuerpo(String cuerpo) { this.cuerpo = cuerpo; }
+    public void setEstadoTicket(String estadoTicket) { this.estadoTicket = estadoTicket; }
+    public void setEnviado(Boolean enviado) { this.enviado = enviado; }
+    public void setDtEnviado(LocalDateTime dtEnviado) { this.dtEnviado = dtEnviado; }
 }

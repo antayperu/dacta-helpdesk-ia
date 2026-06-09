@@ -1,17 +1,12 @@
 package com.dacta.helpdesk.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "hds_mensaje_origen")
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class MensajeOrigenEntity {
 
     @Id
@@ -38,7 +33,6 @@ public class MensajeOrigenEntity {
     private String messageId;
 
     @Column(nullable = false)
-    @Builder.Default
     private Boolean procesado = false;
 
     @CreationTimestamp
@@ -47,4 +41,26 @@ public class MensajeOrigenEntity {
 
     @Column(name = "dt_procesado")
     private LocalDateTime dtProcesado;
+
+    public MensajeOrigenEntity() {}
+
+    public Long getId() { return id; }
+    public TicketEntity getTicket() { return ticket; }
+    public String getCanal() { return canal; }
+    public String getRemitente() { return remitente; }
+    public String getAsunto() { return asunto; }
+    public String getCuerpo() { return cuerpo; }
+    public String getMessageId() { return messageId; }
+    public Boolean getProcesado() { return procesado; }
+    public LocalDateTime getDtRecibido() { return dtRecibido; }
+    public LocalDateTime getDtProcesado() { return dtProcesado; }
+
+    public void setTicket(TicketEntity ticket) { this.ticket = ticket; }
+    public void setCanal(String canal) { this.canal = canal; }
+    public void setRemitente(String remitente) { this.remitente = remitente; }
+    public void setAsunto(String asunto) { this.asunto = asunto; }
+    public void setCuerpo(String cuerpo) { this.cuerpo = cuerpo; }
+    public void setMessageId(String messageId) { this.messageId = messageId; }
+    public void setProcesado(Boolean procesado) { this.procesado = procesado; }
+    public void setDtProcesado(LocalDateTime dtProcesado) { this.dtProcesado = dtProcesado; }
 }
