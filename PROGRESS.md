@@ -128,7 +128,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-020 | Crear CierreAutomaticoService — scheduler 48h | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-021 | Crear endpoint GET /api/tickets (lista paginada + filtros) | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-022 | Crear endpoint GET /api/tickets/{id} (detalle completo) | ✅ COMPLETA | 2026-06-09 | Claude Code |
-| TASK-023 | Test de integración Épica 1 | ⬜ PENDIENTE | — | — |
+| TASK-023 | Test de integración Épica 1 | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-024 | Commit Épica 1 al repositorio GitLab | ⬜ PENDIENTE | — | — |
 
 ### ÉPICA 2 — MOTOR IA — CLASIFICACIÓN
