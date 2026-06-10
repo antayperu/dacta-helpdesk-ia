@@ -161,8 +161,8 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-039 | Crear ticketService.js — todas las llamadas a la API | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-040 | Crear TicketCard.jsx — componente fila de ticket | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-041 | Crear PanelTicketsPage.jsx — basado en UX-003 | ✅ COMPLETA | 2026-06-09 | Claude Code |
-| TASK-042 | Crear TicketDetallePage.jsx — basado en UX-004 | ⬜ PENDIENTE | — | — |
-| TASK-043 | Crear CrearTicketManualModal.jsx — basado en UX-005 | ⬜ PENDIENTE | — | — |
+| TASK-042 | Crear TicketDetallePage.jsx — basado en UX-004 | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-043 | Crear CrearTicketManualModal.jsx — basado en UX-005 | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-044 | Crear FiltrosTickets.jsx — basado en UX-006 | ⬜ PENDIENTE | — | — |
 | TASK-045 | Crear CargaAgentesPanel.jsx — carga de Carlos, Antonny, Diego | ⬜ PENDIENTE | — | — |
 | TASK-046 | Tests de componentes React Épica 3 | ⬜ PENDIENTE | — | — |

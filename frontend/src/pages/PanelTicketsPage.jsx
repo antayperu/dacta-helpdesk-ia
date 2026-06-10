@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import { obtenerTickets } from '../services/ticketService'
 import { getRol } from '../services/authService'
 import TicketCard from '../components/tickets/TicketCard'
+import CrearTicketManualModal from '../components/tickets/CrearTicketManualModal'
 
 /* ─── KPI Card ──────────────────────────────────────── */
 function KpiCard({ label, valor, sublabel, color, loading }) {
@@ -50,6 +51,7 @@ export default function PanelTicketsPage() {
   const rol = getRol()
   const [pagina, setPagina]   = useState(0)
   const [filtros, setFiltros] = useState({ estado: '', urgencia: '', busqueda: '' })
+  const [mostrarModal, setMostrarModal] = useState(false)
 
   const { data, isLoading, isFetching, isError } = useQuery({
     queryKey: ['tickets', filtros, pagina],
@@ -94,6 +96,7 @@ export default function PanelTicketsPage() {
         </div>
         {(rol === 'AGENTE' || rol === 'SUPERVISOR') && (
           <button
+            onClick={() => setMostrarModal(true)}
             style={{
               height: 44, padding: '0 20px',
               background: '#5B33D4', color: '#fff',
@@ -324,6 +327,13 @@ export default function PanelTicketsPage() {
           100% { background-color: #F2F0FE; }
         }
       `}</style>
+
+      {mostrarModal && (
+        <CrearTicketManualModal
+          onClose={() => setMostrarModal(false)}
+          onSuccess={() => setMostrarModal(false)}
+        />
+      )}
     </div>
   )
 }
