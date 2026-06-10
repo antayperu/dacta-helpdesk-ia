@@ -158,9 +158,9 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-036 | Crear authService.js — login + JWT + interceptores Axios | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-037 | Crear LoginPage.jsx — basado en UX-001-login.html | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-038 | Crear Layout.jsx — sidebar + header basado en UX-002 | ✅ COMPLETA | 2026-06-09 | Claude Code |
-| TASK-039 | Crear ticketService.js — todas las llamadas a la API | ⬜ PENDIENTE | — | — |
-| TASK-040 | Crear TicketCard.jsx — componente fila de ticket | ⬜ PENDIENTE | — | — |
-| TASK-041 | Crear PanelTicketsPage.jsx — basado en UX-003 | ⬜ PENDIENTE | — | — |
+| TASK-039 | Crear ticketService.js — todas las llamadas a la API | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-040 | Crear TicketCard.jsx — componente fila de ticket | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-041 | Crear PanelTicketsPage.jsx — basado en UX-003 | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-042 | Crear TicketDetallePage.jsx — basado en UX-004 | ⬜ PENDIENTE | — | — |
 | TASK-043 | Crear CrearTicketManualModal.jsx — basado en UX-005 | ⬜ PENDIENTE | — | — |
 | TASK-044 | Crear FiltrosTickets.jsx — basado en UX-006 | ⬜ PENDIENTE | — | — |
