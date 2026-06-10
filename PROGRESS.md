@@ -153,8 +153,8 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 
 | Tarea | Descripción | Estado | Fecha | IA usada |
 |---|---|---|---|---|
-| TASK-034 | Configurar proyecto React + Vite + Tailwind con colores Integrens | ⬜ PENDIENTE | — | — |
-| TASK-035 | Crear estructura de carpetas frontend/src/ | ⬜ PENDIENTE | — | — |
+| TASK-034 | Configurar proyecto React + Vite + Tailwind con colores Integrens | ✅ COMPLETA | 2026-06-09 | Claude Code |
+| TASK-035 | Crear estructura de carpetas frontend/src/ | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-036 | Crear authService.js — login + JWT + interceptores Axios | ⬜ PENDIENTE | — | — |
 | TASK-037 | Crear LoginPage.jsx — basado en UX-001-login.html | ⬜ PENDIENTE | — | — |
 | TASK-038 | Crear Layout.jsx — sidebar + header basado en UX-002 | ⬜ PENDIENTE | — | — |
