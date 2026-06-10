@@ -5,6 +5,7 @@ import { getRol } from '../services/authService'
 import TicketCard from '../components/tickets/TicketCard'
 import CrearTicketManualModal from '../components/tickets/CrearTicketManualModal'
 import FiltrosTickets from '../components/tickets/FiltrosTickets'
+import CargaAgentesPanel from '../components/tickets/CargaAgentesPanel'
 
 /* ─── KPI Card ──────────────────────────────────────── */
 function KpiCard({ label, valor, sublabel, color, loading }) {
@@ -106,6 +107,9 @@ export default function PanelTicketsPage() {
           </button>
         )}
       </div>
+
+      {/* ── Carga de agentes (solo Supervisor) ── */}
+      {rol === 'SUPERVISOR' && <CargaAgentesPanel />}
 
       {/* ── KPIs ── */}
       <div style={{ display: 'flex', gap: 16, marginBottom: 24, flexWrap: 'wrap' }}>
