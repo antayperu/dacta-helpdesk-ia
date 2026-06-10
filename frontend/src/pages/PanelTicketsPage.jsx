@@ -4,6 +4,7 @@ import { obtenerTickets } from '../services/ticketService'
 import { getRol } from '../services/authService'
 import TicketCard from '../components/tickets/TicketCard'
 import CrearTicketManualModal from '../components/tickets/CrearTicketManualModal'
+import FiltrosTickets from '../components/tickets/FiltrosTickets'
 
 /* ─── KPI Card ──────────────────────────────────────── */
 function KpiCard({ label, valor, sublabel, color, loading }) {
@@ -44,13 +45,10 @@ function TicketSkeleton() {
   )
 }
 
-const ESTADOS_OPTS = ['', 'NUEVO', 'EN_PROGRESO', 'PENDIENTE_CLIENTE', 'RESUELTO', 'CERRADO', 'REABIERTO']
-const URGENCIAS_OPTS = ['', 'CRITICA', 'ALTA', 'MEDIA', 'BAJA']
-
 export default function PanelTicketsPage() {
   const rol = getRol()
   const [pagina, setPagina]   = useState(0)
-  const [filtros, setFiltros] = useState({ estado: '', urgencia: '', busqueda: '' })
+  const [filtros, setFiltros] = useState({ estado: '', urgencia: '', busqueda: '', modulo: '', agente: '', canal: '', tipo: '', fechaDesde: '', fechaHasta: '' })
   const [mostrarModal, setMostrarModal] = useState(false)
 
   const { data, isLoading, isFetching, isError } = useQuery({
@@ -66,17 +64,12 @@ export default function PanelTicketsPage() {
   const criticos     = tickets.filter(t => t.urgencia === 'CRITICA' && t.estado !== 'CERRADO').length
   const sinAsignar   = tickets.filter(t => !t.nombreAgente).length
 
-  function actualizarFiltro(campo, valor) {
-    setFiltros(prev => ({ ...prev, [campo]: valor }))
+  function actualizarFiltros(nuevosFiltros) {
+    setFiltros(nuevosFiltros)
     setPagina(0)
   }
 
-  function limpiarFiltros() {
-    setFiltros({ estado: '', urgencia: '', busqueda: '' })
-    setPagina(0)
-  }
-
-  const hayFiltros = filtros.estado || filtros.urgencia || filtros.busqueda
+  const hayFiltros = Object.values(filtros).some(Boolean)
 
   return (
     <div style={{ maxWidth: 1200, margin: '0 auto', animation: 'fadeIn 0.5s ease' }}>
@@ -140,80 +133,11 @@ export default function PanelTicketsPage() {
       </div>
 
       {/* ── Filtros ── */}
-      <div style={{
-        background: '#fff', border: '1px solid #EEEAFF', borderRadius: 12,
-        padding: '16px 20px', marginBottom: 16,
-        display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center',
-      }}>
-        {/* Búsqueda */}
-        <input
-          type="text"
-          placeholder="Buscar por asunto, cliente, código…"
-          value={filtros.busqueda}
-          onChange={e => actualizarFiltro('busqueda', e.target.value)}
-          style={{
-            flex: 1, minWidth: 200, height: 40,
-            padding: '0 14px', borderRadius: 8,
-            border: '1.5px solid #DDD9F5', fontSize: 13,
-            fontFamily: 'inherit', color: '#1E1B2E', outline: 'none',
-            transition: 'border-color 0.2s',
-          }}
-          onFocus={e => e.target.style.borderColor = '#5B33D4'}
-          onBlur={e => e.target.style.borderColor = '#DDD9F5'}
-        />
-
-        {/* Estado */}
-        <select
-          value={filtros.estado}
-          onChange={e => actualizarFiltro('estado', e.target.value)}
-          style={{
-            height: 40, padding: '0 12px', borderRadius: 8,
-            border: '1.5px solid #DDD9F5', fontSize: 13,
-            fontFamily: 'inherit', color: filtros.estado ? '#1E1B2E' : '#8B87A8',
-            background: '#fff', cursor: 'pointer', outline: 'none',
-          }}
-        >
-          <option value="">Todos los estados</option>
-          {ESTADOS_OPTS.filter(Boolean).map(e => (
-            <option key={e} value={e}>{e.replace('_', ' ')}</option>
-          ))}
-        </select>
-
-        {/* Urgencia */}
-        <select
-          value={filtros.urgencia}
-          onChange={e => actualizarFiltro('urgencia', e.target.value)}
-          style={{
-            height: 40, padding: '0 12px', borderRadius: 8,
-            border: '1.5px solid #DDD9F5', fontSize: 13,
-            fontFamily: 'inherit', color: filtros.urgencia ? '#1E1B2E' : '#8B87A8',
-            background: '#fff', cursor: 'pointer', outline: 'none',
-          }}
-        >
-          <option value="">Toda urgencia</option>
-          {URGENCIAS_OPTS.filter(Boolean).map(u => (
-            <option key={u} value={u}>{u}</option>
-          ))}
-        </select>
-
-        {/* Limpiar */}
-        {hayFiltros && (
-          <button
-            onClick={limpiarFiltros}
-            style={{
-              height: 40, padding: '0 14px', borderRadius: 8,
-              border: '1.5px solid #DDD9F5', background: '#fff',
-              fontSize: 13, color: '#8B87A8', cursor: 'pointer',
-              fontFamily: 'inherit',
-              transition: 'all 0.15s',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = '#EF4444'; e.currentTarget.style.color = '#EF4444' }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = '#DDD9F5'; e.currentTarget.style.color = '#8B87A8' }}
-          >
-            ✕ Limpiar
-          </button>
-        )}
-      </div>
+      <FiltrosTickets
+        filtros={filtros}
+        totalItems={totalItems}
+        onChange={actualizarFiltros}
+      />
 
       {/* ── Lista de tickets ── */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -244,7 +168,7 @@ export default function PanelTicketsPage() {
             </p>
             {hayFiltros && (
               <button
-                onClick={limpiarFiltros}
+                onClick={() => actualizarFiltros({ estado: '', urgencia: '', busqueda: '', modulo: '', agente: '', canal: '', tipo: '', fechaDesde: '', fechaHasta: '' })}
                 style={{
                   marginTop: 16, padding: '8px 20px', borderRadius: 8,
                   background: '#5B33D4', color: '#fff', border: 'none',
