@@ -157,7 +157,7 @@ FASE 5 — Demo equipo DACTA    ⬜ PENDIENTE
 | TASK-035 | Crear estructura de carpetas frontend/src/ | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-036 | Crear authService.js — login + JWT + interceptores Axios | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-037 | Crear LoginPage.jsx — basado en UX-001-login.html | ✅ COMPLETA | 2026-06-09 | Claude Code |
-| TASK-038 | Crear Layout.jsx — sidebar + header basado en UX-002 | ⬜ PENDIENTE | — | — |
+| TASK-038 | Crear Layout.jsx — sidebar + header basado en UX-002 | ✅ COMPLETA | 2026-06-09 | Claude Code |
 | TASK-039 | Crear ticketService.js — todas las llamadas a la API | ⬜ PENDIENTE | — | — |
 | TASK-040 | Crear TicketCard.jsx — componente fila de ticket | ⬜ PENDIENTE | — | — |
 | TASK-041 | Crear PanelTicketsPage.jsx — basado en UX-003 | ⬜ PENDIENTE | — | — |
