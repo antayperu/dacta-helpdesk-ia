@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import LoginPage from './pages/LoginPage'
 import Layout from './components/common/Layout'
 import PanelTicketsPage from './pages/PanelTicketsPage'
+import TicketDetallePage from './pages/TicketDetallePage'
 
 const Placeholder = ({ titulo }) => (
   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400 }}>
@@ -20,7 +21,7 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
       <Route element={<Layout />}>
         <Route path="/tickets"        element={<PanelTicketsPage />} />
-        <Route path="/tickets/:id"    element={<Placeholder titulo="Detalle del Ticket" />} />
+        <Route path="/tickets/:id"    element={<TicketDetallePage />} />
         <Route path="/dashboard"      element={<Placeholder titulo="Dashboard Gerencial" />} />
         <Route path="/admin"          element={<Placeholder titulo="Administración" />} />
       </Route>
