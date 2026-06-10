@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --int-purple:       #5B33D4;
+  --int-purple-dark:  #453E72;
+  --int-purple-deep:  #3B2A8F;
+  --int-sidebar:      #353C44;
+  --int-cyan:         #38C1E1;
+  --int-bg:           #F2F0FE;
+  --int-text-dark:    #1E1B2E;
+  --int-text-mid:     #4A4560;
+  --int-text-light:   #8B87A8;
+  --int-border:       #DDD9F5;
+  --font-main:        'Plus Jakarta Sans', sans-serif;
+  --ease:             cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-main);
+    background-color: var(--int-bg);
+    color: var(--int-text-mid);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.4; }
+  }
+
+  .animate-fade-in     { animation: fadeIn 0.6s var(--ease) forwards; }
+  .animate-slide-up    { animation: fadeSlideUp 0.7s var(--ease) both; }
+  .animate-pulse-dot   { animation: pulse-dot 2s infinite; }
+}
