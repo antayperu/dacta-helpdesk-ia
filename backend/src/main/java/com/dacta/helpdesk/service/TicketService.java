@@ -67,6 +67,44 @@ public class TicketService {
     }
 
     @Transactional
+    public TicketEntity crearTicketDesdeCorreo(String correoCliente, String nombreCliente,
+                                               String asunto, String descripcion,
+                                               ModuloEntity modulo) {
+        TicketEntity ticket = new TicketEntity();
+        ticket.setCodigo(ticketCodeGenerator.generarSiguienteCodigo());
+        ticket.setAsunto(asunto);
+        ticket.setDescripcion(descripcion);
+        ticket.setCanalOrigen("CORREO");
+        ticket.setEstado("NUEVO");
+        ticket.setUrgencia("MEDIA");
+        ticket.setModulo(modulo);
+        ticket.setCorreoCliente(correoCliente);
+        ticket.setNombreCliente(nombreCliente);
+        TicketEntity guardado = ticketRepository.save(ticket);
+        registrarHistorial(guardado, null, "NUEVO", null, "Ticket creado desde correo");
+        return guardado;
+    }
+
+    @Transactional
+    public TicketEntity crearTicketDesdeWhatsApp(String telefonoCliente, String nombreCliente,
+                                                  String mensaje, ModuloEntity modulo) {
+        String asunto = "WhatsApp: " + (mensaje.length() > 100 ? mensaje.substring(0, 100) : mensaje);
+        TicketEntity ticket = new TicketEntity();
+        ticket.setCodigo(ticketCodeGenerator.generarSiguienteCodigo());
+        ticket.setAsunto(asunto);
+        ticket.setDescripcion(mensaje);
+        ticket.setCanalOrigen("WHATSAPP");
+        ticket.setEstado("NUEVO");
+        ticket.setUrgencia("MEDIA");
+        ticket.setModulo(modulo);
+        ticket.setCorreoCliente(telefonoCliente);
+        ticket.setNombreCliente(nombreCliente);
+        TicketEntity guardado = ticketRepository.save(ticket);
+        registrarHistorial(guardado, null, "NUEVO", null, "Ticket creado desde WhatsApp");
+        return guardado;
+    }
+
+    @Transactional
     public TicketEntity reabrirTicket(Long idTicket, String motivo, UsuarioEntity usuario) {
         TicketEntity ticket = ticketRepository.findById(idTicket)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Ticket no encontrado"));
